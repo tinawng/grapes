@@ -8,6 +8,9 @@ module.exports = {
       height: {
         '72': '20rem'
       },
+      borderWidth: {
+        '5': '5px'
+      },
       colors: {
         'brand-white': '#FAFAFA',
         'brand-black': '#202020',
