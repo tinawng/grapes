@@ -140,46 +140,62 @@
           </div>
         </div>
 
-        <div class="w-1/2 relative overflow-hidden">
-          <g-image class="absolute w-full h-full hover-zoom" src="~/assets/images/brute.jpg" />
+        <div class="w-1/2 relative overflow-hidden" style="height: 23vw">
           <div
-            class="absolute w-full h-full zonapro-bold text-white text-4xl flex justify-center items-center pointer-events-none"
+            class="absolute w-full h-full zonapro-bold text-white xl:text-4xl text-xl flex justify-center items-center pointer-events-none z-50"
           >
-            <div class="border-5 px-8 py-1">BRUTE</div>
+            <div class="xl:border-5 border-4 px-8 py-1">BRUTE</div>
           </div>
+          <g-image
+            class="w-full h-fullz hover-zoom"
+            src="~/assets/images/brute.jpg"
+            style="object-fit: none;"
+          />
         </div>
-
-        <div class="w-1/2 relative">
+        <div class="w-1/2 relative overflow-hidden" style="height: 23vw">
           <div
-            class="absolute w-full h-full zonapro-bold text-white text-4xl flex justify-center items-center"
+            class="absolute w-full h-full zonapro-bold text-white xl:text-4xl text-xl flex justify-center items-center pointer-events-none z-50"
           >
-            <div class="border-5 px-8 py-1">FUSE</div>
+            <div class="xl:border-5 border-4 px-8 py-1">FUSE</div>
           </div>
-          <g-image class="w-full" src="~/assets/images/fuse.jpg" />
+          <g-image
+            class="w-full h-full hover-zoom"
+            src="~/assets/images/fuse.jpg"
+          />
         </div>
-        <div class="w-full relative">
+        <div class="w-full relative overflow-hidden" style="height: 23vw">
+          
           <div
-            class="absolute w-full h-full zonapro-bold text-white text-4xl flex justify-center items-center"
+            class="absolute w-full h-full zonapro-bold text-white xl:text-4xl text-xl flex justify-center items-center pointer-events-none z-50"
           >
-            <div class="border-5 px-4">LAB</div>
+            <div class="xl:border-5 border-4 px-8 py-1">LAB</div>
           </div>
-          <g-image class="w-full" src="~/assets/images/lab.jpg" />
+          <g-image
+            class="w-full h-full hover-zoom"
+            src="~/assets/images/lab.jpg"
+          />
         </div>
-        <div class="w-1/2 relative">
+        <div class="w-1/2 relative overflow-hidden" style="height: 23vw">
           <div
-            class="absolute w-full h-full zonapro-bold text-white text-4xl flex justify-center items-center"
+            class="absolute w-full h-full zonapro-bold text-white xl:text-4xl text-xl flex justify-center items-center pointer-events-none z-50"
           >
-            <div class="border-5 px-4">FREAK</div>
+            <div class="xl:border-5 border-4 px-8 py-1">FREAK</div>
           </div>
-          <g-image class="w-full" src="~/assets/images/freak.jpg" />
+          <g-image
+            class="w-full h-full hover-zoom"
+            src="~/assets/images/freak.jpg"
+          />
         </div>
-        <div class="w-1/2 relative">
+        <div class="w-1/2 relative overflow-hidden" style="height: 23vw">
           <div
-            class="absolute w-full h-full zonapro-bold text-white text-4xl flex justify-center items-center"
+            class="absolute w-full h-full zonapro-bold text-white xl:text-4xl text-xl flex justify-center items-center pointer-events-none z-50"
           >
-            <div class="border-5 px-4">STEP</div>
+            <div class="xl:border-5 border-4 px-8 py-1">STEP</div>
           </div>
-          <g-image class="w-full" src="~/assets/images/step.jpg" />
+          <g-image
+            class="w-full h-full hover-zoom"
+            src="~/assets/images/step.jpg"
+          />
         </div>
       </div>
     </section>
@@ -211,11 +227,11 @@ export default {
 
 <style scoped>
 .hover-zoom:hover {
-  filter: brightness(70%);
+  filter: brightness(75%);
   transform: scale(1.1);
 }
 .hover-zoom {
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 .h-1\/2 {
   height: 45vh;
