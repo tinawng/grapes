@@ -102,14 +102,14 @@
     </section>
     <section ref="section3" id="section3">
       <div class="flex flex-wrap">
-        <div class="w-1/2 flex h-1/2 items-center">
+        <div class="w-1/2 flex h-1/2 items-center" style="padding-top: 5vh">
           <div class="flex flex-col justify-between xl:h-32 h-24">
             <span
               class="xl:text-lg text-sm"
               data-aos="fade-up"
               data-aos-duration="1600"
               data-aos-delay="0"
-              >INTRODUCING</span
+              >RANGES</span
             >
             <Spacer
               data-aos="fade-up"
@@ -125,22 +125,62 @@
             >
           </div>
         </div>
-        <div class="w-1/2 flex h-1/2 items-center">
+        <div class="w-1/2 flex h-1/2 items-center" style="padding-top: 5vh">
           <div class="flex flex-col justify-between xl:h-32 h-24">
             <span
               class="mt-4 xl:text-lg text-sm"
               data-aos="fade-up"
               data-aos-duration="1600"
               data-aos-delay="400"
-              >Explore the ultimate limits of your synth and sembark on the most radical sound experience. Embrace a wide variety of synthetic soundsm find your own creative madness and push it to the extreme for something never seen before.</span
+              >Explore the ultimate limits of your synth and sembark on the most
+              radical sound experience. Embrace a wide variety of synthetic
+              soundsm find your own creative madness and push it to the extreme
+              for something never seen before.</span
             >
           </div>
         </div>
-        <g-image class="w-1/2 relative" src="~/assets/images/brute.jpg" />
-        <g-image class="w-1/2 relative" src="~/assets/images/fuse.jpg" />
-        <g-image class="w-full relative" src="~/assets/images/lab.jpg" />
-        <g-image class="w-1/2 relative" src="~/assets/images/freak.jpg" />
-        <g-image class="w-1/2 relative" src="~/assets/images/step.jpg" />
+
+        <div class="w-1/2 relative overflow-hidden">
+          <g-image class="absolute w-full h-full hover-zoom" src="~/assets/images/brute.jpg" />
+          <div
+            class="absolute w-full h-full zonapro-bold text-white text-4xl flex justify-center items-center pointer-events-none"
+          >
+            <div class="border-5 px-8 py-1">BRUTE</div>
+          </div>
+        </div>
+
+        <div class="w-1/2 relative">
+          <div
+            class="absolute w-full h-full zonapro-bold text-white text-4xl flex justify-center items-center"
+          >
+            <div class="border-5 px-8 py-1">FUSE</div>
+          </div>
+          <g-image class="w-full" src="~/assets/images/fuse.jpg" />
+        </div>
+        <div class="w-full relative">
+          <div
+            class="absolute w-full h-full zonapro-bold text-white text-4xl flex justify-center items-center"
+          >
+            <div class="border-5 px-4">LAB</div>
+          </div>
+          <g-image class="w-full" src="~/assets/images/lab.jpg" />
+        </div>
+        <div class="w-1/2 relative">
+          <div
+            class="absolute w-full h-full zonapro-bold text-white text-4xl flex justify-center items-center"
+          >
+            <div class="border-5 px-4">FREAK</div>
+          </div>
+          <g-image class="w-full" src="~/assets/images/freak.jpg" />
+        </div>
+        <div class="w-1/2 relative">
+          <div
+            class="absolute w-full h-full zonapro-bold text-white text-4xl flex justify-center items-center"
+          >
+            <div class="border-5 px-4">STEP</div>
+          </div>
+          <g-image class="w-full" src="~/assets/images/step.jpg" />
+        </div>
       </div>
     </section>
     <section ref="section4" id="section4">section4</section>
@@ -170,8 +210,15 @@ export default {
 </script>
 
 <style scoped>
+.hover-zoom:hover {
+  filter: brightness(70%);
+  transform: scale(1.1);
+}
+.hover-zoom {
+  transition: all .5s ease;
+}
 .h-1\/2 {
-  height: 50vh;
+  height: 45vh;
 }
 .margin-left {
   margin-left: 5vw;
