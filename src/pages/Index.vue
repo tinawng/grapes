@@ -200,17 +200,19 @@
       </div>
     </section>
     <section ref="section4" id="section4">section4</section>
-    <section ref="section5" id="section5">section5</section>
-    <section ref="section5" id="section5">section6</section>
+    <section ref="section5" id="section5"><ContactCard/></section>
+    <section ref="section6" id="section6">section6</section>
   </Layout>
 </template>
 
 <script>
 import { intersectionTrigger } from "~/libs/IntersectionHelper.js";
+import ContactCard from "~/components/ContactCard.vue";
 import Spacer from "~/components/Spacer.vue";
 
 export default {
   components: {
+    ContactCard,
     Spacer,
   },
 
