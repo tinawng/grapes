@@ -1,8 +1,8 @@
 <template>
-  <div class="dimensions flex border border-black">
-    <div class="flex flex-col justify-between xl:h-72 h-64">
+  <div class="dimensions p-12 flex items-center border border-black">
+    <div class="flex flex-col justify-between bb">
       <span
-        class="xl:text-lg text-sm"
+        class=" text-sm"
         data-aos="fade-up"
         data-aos-duration="1600"
         data-aos-delay="0"
@@ -14,14 +14,14 @@
         data-aos-delay="150"
       />
       <span
-        class="xl:text-5xl text-3xl leading-none"
+        class=" text-3xl leading-none"
         data-aos="fade-up"
         data-aos-duration="1600"
         data-aos-delay="250"
         >_HIRE <strong>TINA</strong></span
       >
       <span
-        class="xl:text-lg text-sm"
+        class=" text-sm"
         data-aos="fade-up"
         data-aos-duration="1600"
         data-aos-delay="400"
@@ -31,17 +31,17 @@
       >
       <div data-aos="fade-up" data-aos-duration="1800" data-aos-delay="650">
         <button
-          class="py-2 xl:w-64 w-48 xl:text-lg text-sm hover:bg-brand-black hover:text-brand-white border border-brand-black button"
+          class="py-2  w-48  text-sm hover:bg-brand-black hover:text-brand-white border border-brand-black button"
         >
           EXPLORE
         </button>
       </div>
     </div>
-    <div class="flex flex-col text-center">
-      <g-image class="rounded-full" src="~/assets/images/tina.jpg" />
-      <strong class="text-5xl">Tina Wang</strong>
+    <div class="flex flex-col justify-between items-center h-full">
+      <g-image class="h-48 w-48 rounded-full" src="~/assets/images/tina.jpg" />
+      <strong class="text-3xl ">Tina Wang</strong>
       <g-image class="aa mx-auto" src="~/assets/images/motto.png" />
-      <Spacer/>
+      <Spacer />
       <span class="text-lg">github.com/tinawng</span>
     </div>
   </div>
@@ -58,10 +58,16 @@ export default {
 
 <style scoped>
 .dimensions {
-  width: 80vw;
+  width: 100%;
+  max-width: 1033px;
   height: 80vh;
+  max-height: 463px;
 }
 .aa {
-    width: 55%;
+  width: 50%;
+}
+
+.bb {
+  height: 80%;
 }
 </style>

@@ -156,11 +156,11 @@
           <div
             class="absolute w-full h-full zonapro-bold text-white xl:text-4xl text-xl flex justify-center items-center pointer-events-none z-50"
           >
-            <div class="xl:border-5 border-4 px-8 py-1">FUSE</div>
+            <div class="xl:border-5 border-4 px-8 py-1">FEAK</div>
           </div>
           <g-image
             class="w-full h-full hover-zoom"
-            src="~/assets/images/fuse.jpg"
+            src="~/assets/images/freak.jpg"
           />
         </div>
         <div class="w-full relative overflow-hidden" style="height: 23vw">
@@ -179,11 +179,11 @@
           <div
             class="absolute w-full h-full zonapro-bold text-white xl:text-4xl text-xl flex justify-center items-center pointer-events-none z-50"
           >
-            <div class="xl:border-5 border-4 px-8 py-1">FREAK</div>
+            <div class="xl:border-5 border-4 px-8 py-1">Fuse</div>
           </div>
           <g-image
             class="w-full h-full hover-zoom"
-            src="~/assets/images/freak.jpg"
+            src="~/assets/images/fuse.jpg"
           />
         </div>
         <div class="w-1/2 relative overflow-hidden" style="height: 23vw">
@@ -200,7 +200,13 @@
       </div>
     </section>
     <section ref="section4" id="section4">section4</section>
-    <section ref="section5" id="section5"><ContactCard/></section>
+    <section ref="section5" id="section5">
+      <div class="flex justify-center">
+      <ContactCard/>
+
+      </div>
+
+    </section>
     <section ref="section6" id="section6">section6</section>
   </Layout>
 </template>
