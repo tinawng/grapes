@@ -28,6 +28,17 @@ button:focus {
   outline: none !important;
 }
 
+.slide-fade-enter-active {
+  transition: all .414s ease-out;
+}
+.slide-fade-leave-active {
+  transition: all .414s ease-out;
+}
+.slide-fade-enter, .slide-fade-leave-to {
+  transform: translatey(10vw);
+  opacity: 0;
+}
+
 .zonapro-extralight {
   font-family: "ZonaPro ExtraLight";
 }
