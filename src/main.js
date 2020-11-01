@@ -14,6 +14,7 @@ const VueScrollTo = require('vue-scrollto')
 
 export default function (Vue, { router, head, isClient }) {
 
+  Vue.prototype.$event_bus = new Vue();
   Vue.use(VueScrollTo, { duration: 1414 })
 
   // Set default layout as a global component

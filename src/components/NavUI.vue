@@ -49,11 +49,10 @@ export default {
   }),
 
   mounted() {
-    var self = this;
-    window.onscroll = function () {
-      self.nav_hidden = window.pageYOffset >= 100;
-      self.nav_shifted_left = window.pageYOffset < 100;
-    };
+    this.$event_bus.$on('scrolling', () => {
+      this.nav_hidden = window.pageYOffset >= 100;
+      this.nav_shifted_left = window.pageYOffset < 100;
+    })
   },
 
   methods: {
