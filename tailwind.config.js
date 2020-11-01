@@ -2,11 +2,20 @@ module.exports = {
   purge: ['./src/**/*.html', './src/**/*.vue', './src/**/*.js', './src/**/*.postcss'],
   theme: {
     extend: {
+      screens: {
+        'portrait': { 'raw': '(orientation: portrait)' },
+        'lg': '1280px',
+        'xl': '1600px',
+      },
       fontSize: {
         '7xl': '5rem',
       },
       height: {
-        '72': '20rem'
+        '72': '20rem',
+
+        '60': '60%',
+        '90': '90%',
+        '95': '95%',
       },
       borderWidth: {
         '5': '5px'
@@ -15,7 +24,7 @@ module.exports = {
         'brand-white': '#FAFAFA',
         'brand-black': '#202020',
         lightseagreen: {
-          '50':  '#ebf3f6',
+          '50': '#ebf3f6',
           '100': '#daf2f5',
           '200': '#9de9ed',
           '300': '#61e1db',
@@ -27,7 +36,7 @@ module.exports = {
           '900': '#13504c',
         },
         deepskyblue: {
-          '50':  '#eef5f7',
+          '50': '#eef5f7',
           '100': '#dff4f7',
           '200': '#a5e7f4',
           '300': '#6edbec',
@@ -39,7 +48,7 @@ module.exports = {
           '900': '#164366',
         },
         cornflowerblue: {
-          '50':  '#f2f6f8',
+          '50': '#f2f6f8',
           '100': '#e8f4f7',
           '200': '#c1e3f4',
           '300': '#99d1ef',
@@ -51,7 +60,7 @@ module.exports = {
           '900': '#22376d',
         },
         orchid: {
-          '50':  '#f6f8f8',
+          '50': '#f6f8f8',
           '100': '#f3f4f4',
           '200': '#e7ddee',
           '300': '#dcbde8',
@@ -63,7 +72,7 @@ module.exports = {
           '900': '#4b2761',
         },
         hotpink: {
-          '50':  '#f8f8f8',
+          '50': '#f8f8f8',
           '100': '#f6f5f2',
           '200': '#f0dce7',
           '300': '#eabade',
@@ -75,7 +84,7 @@ module.exports = {
           '900': '#5e2450',
         },
         indianred: {
-          '50':  '#f8f8f7',
+          '50': '#f8f8f7',
           '100': '#f7f4ec',
           '200': '#f4ded5',
           '300': '#f0c1b9',
@@ -87,7 +96,7 @@ module.exports = {
           '900': '#672731',
         },
         chocolate: {
-          '50':  '#f9f7f5',
+          '50': '#f9f7f5',
           '100': '#f8f3e5',
           '200': '#f6e1b7',
           '300': '#f3c97d',
@@ -99,7 +108,7 @@ module.exports = {
           '900': '#6e2c1c',
         },
         darkorange: {
-          '50':  '#f9f7f5',
+          '50': '#f9f7f5',
           '100': '#f8f3e1',
           '200': '#f7e4a5',
           '300': '#f3cf5d',
@@ -111,7 +120,7 @@ module.exports = {
           '900': '#6a3014',
         },
         darkgoldenrod: {
-          '50':  '#f7f7f5',
+          '50': '#f7f7f5',
           '100': '#f6f3e4',
           '200': '#f3e5b1',
           '300': '#ecd36b',
@@ -123,7 +132,7 @@ module.exports = {
           '900': '#583417',
         },
         mediumseagreen: {
-          '50':  '#f1f4f5',
+          '50': '#f1f4f5',
           '100': '#e8f2f0',
           '200': '#cae8de',
           '300': '#a1deb6',
