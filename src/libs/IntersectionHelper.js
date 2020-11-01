@@ -1,4 +1,4 @@
-function intersectionTrigger(target) {
+function intersectionTrigger(target, callback = () => { }, callback_threshold = 1) {
   var options = {
     threshold: [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
   };
@@ -12,6 +12,9 @@ function intersectionTrigger(target) {
       // 🚀 Set scroll target to next section
       if (threshold >= .9)
         window.current_section = entry.target.id.slice(0, -1) + scroll_to_id;
+
+      // 💫 Callback when fully scrolled
+      if (threshold >= callback_threshold) callback();
 
       // 📌 If scrolling back a bit, set target to current section again
       if (threshold > 0.1 && threshold < 1 && extractID(window.current_section) === (current_id + 2))

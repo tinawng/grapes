@@ -31,7 +31,7 @@
             connectivity, powerful features, top-tier sound quality and a focus
             on creative workflow.</span
           >
-          <div data-aos="fade-up" data-aos-duration="1800" data-aos-delay="650">
+          <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="650">
             <button
               class="py-2 xl:w-64 w-48 xl:text-lg text-sm hover:bg-brand-black hover:text-brand-white border border-brand-black button"
             >
@@ -74,24 +74,24 @@
             class="xl:text-5xl text-3xl leading-none"
             data-aos="fade-up"
             data-aos-duration="1600"
-            data-aos-delay="250"
+            data-aos-delay="200"
             >_POLY<strong>BRUTE</strong></span
           >
           <span
             class="xl:text-lg text-sm"
             data-aos="fade-up"
             data-aos-duration="1600"
-            data-aos-delay="400"
+            data-aos-delay="300"
             >6-voice analog powerhouse, with unprecedented expressivity and
             sound morphing capabilities, built to let you perform fearlessly,
             compose with fluidity, and explore sound in perpetual motion.</span
           >
 
-          <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="650">
+          <div data-aos="fade-up" data-aos-duration="1600" data-aos-delay="400">
             <button
               data-aos="fade-up"
               data-aos-duration="1800"
-              data-aos-delay="650"
+              data-aos-delay="400"
               class="py-2 xl:w-64 w-48 xl:text-lg text-sm hover:bg-brand-black hover:text-brand-white border border-brand-black"
             >
               EXPLORE
@@ -149,7 +149,7 @@
           <g-image
             class="w-full h-fullz hover-zoom"
             src="~/assets/images/brute.jpg"
-            style="object-fit: none;"
+            style="object-fit: none"
           />
         </div>
         <div class="w-1/2 relative overflow-hidden" style="height: 23vw">
@@ -164,7 +164,6 @@
           />
         </div>
         <div class="w-full relative overflow-hidden" style="height: 23vw">
-          
           <div
             class="absolute w-full h-full zonapro-bold text-white xl:text-4xl text-xl flex justify-center items-center pointer-events-none z-50"
           >
@@ -179,7 +178,7 @@
           <div
             class="absolute w-full h-full zonapro-bold text-white xl:text-4xl text-xl flex justify-center items-center pointer-events-none z-50"
           >
-            <div class="xl:border-5 border-4 px-8 py-1">Fuse</div>
+            <div class="xl:border-5 border-4 px-8 py-1">FUSE</div>
           </div>
           <g-image
             class="w-full h-full hover-zoom"
@@ -200,35 +199,50 @@
       </div>
     </section>
     <section ref="section4" id="section4">section4</section>
-    <section ref="section5" id="section5">
-      <div class="flex justify-center">
-      <ContactCard/>
-
-      </div>
-
+    <section ref="section5" id="section5" class="relative">
+      <transition name="slide-fade">
+        <ContactCardModal v-if="show" />
+      </transition>
     </section>
-    <section ref="section6" id="section6">section6</section>
   </Layout>
 </template>
 
 <script>
 import { intersectionTrigger } from "~/libs/IntersectionHelper.js";
-import ContactCard from "~/components/ContactCard.vue";
+import ContactCardModal from "~/components/ContactCardModal.vue";
 import Spacer from "~/components/Spacer.vue";
 
 export default {
   components: {
-    ContactCard,
+    ContactCardModal,
     Spacer,
   },
 
+  data: () => ({
+    show: false,
+  }),
+
   mounted() {
+    var self = this;
     intersectionTrigger(this.$refs["section1"]);
     intersectionTrigger(this.$refs["section2"]);
     intersectionTrigger(this.$refs["section3"]);
     intersectionTrigger(this.$refs["section4"]);
-    intersectionTrigger(this.$refs["section5"]);
-    intersectionTrigger(this.$refs["section6"]);
+    intersectionTrigger(this.$refs["section5"], () => {
+      setTimeout(() => {
+        self.show = true;
+        console.log("true");
+      }, 100);
+    });
+
+    this.$event_bus.$on("scrolling", () => {
+      self.show = false;
+      console.log("false");
+    });
+
+    window.onscroll = function () {
+      self.$event_bus.$emit("scrolling");
+    };
   },
 };
 </script>
