@@ -31,13 +31,18 @@
             connectivity, powerful features, top-tier sound quality and a focus
             on creative workflow.</span
           >
-          <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="650">
+          <g-link
+            to="/fuse/audiofuse-studio"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            data-aos-delay="650"
+          >
             <button
               class="py-2 xl:w-64 w-48 xl:text-lg text-sm hover:bg-brand-black hover:text-brand-white border border-brand-black button"
             >
               EXPLORE
             </button>
-          </div>
+          </g-link>
         </div>
         <g-image
           class="absolute-image"
@@ -87,8 +92,14 @@
             compose with fluidity, and explore sound in perpetual motion.</span
           >
 
-          <div data-aos="fade-up" data-aos-duration="1600" data-aos-delay="400">
+          <g-link
+            to="/brute/polybrute"
+            data-aos="fade-up"
+            data-aos-duration="1600"
+            data-aos-delay="400"
+          >
             <button
+              to="/brute"
               data-aos="fade-up"
               data-aos-duration="1800"
               data-aos-delay="400"
@@ -96,7 +107,7 @@
             >
               EXPLORE
             </button>
-          </div>
+          </g-link>
         </div>
       </div>
     </section>
@@ -140,7 +151,11 @@
           </div>
         </div>
 
-        <div class="w-1/2 relative overflow-hidden" style="height: 23vw">
+        <g-link
+          to="/brute"
+          class="w-1/2 relative overflow-hidden"
+          style="height: 23vw"
+        >
           <div
             class="absolute w-full h-full zonapro-bold text-white xl:text-4xl text-xl flex justify-center items-center pointer-events-none z-50"
           >
@@ -151,19 +166,27 @@
             src="~/assets/images/brute.jpg"
             style="object-fit: none"
           />
-        </div>
-        <div class="w-1/2 relative overflow-hidden" style="height: 23vw">
+        </g-link>
+        <g-link
+          to="/freak"
+          class="w-1/2 relative overflow-hidden"
+          style="height: 23vw"
+        >
           <div
             class="absolute w-full h-full zonapro-bold text-white xl:text-4xl text-xl flex justify-center items-center pointer-events-none z-50"
           >
-            <div class="xl:border-5 border-4 px-8 py-1">FEAK</div>
+            <div class="xl:border-5 border-4 px-8 py-1">FREAK</div>
           </div>
           <g-image
             class="w-full h-full hover-zoom"
             src="~/assets/images/freak.jpg"
           />
-        </div>
-        <div class="w-full relative overflow-hidden" style="height: 23vw">
+        </g-link>
+        <g-link
+          to="/lab"
+          class="w-full relative overflow-hidden"
+          style="height: 23vw"
+        >
           <div
             class="absolute w-full h-full zonapro-bold text-white xl:text-4xl text-xl flex justify-center items-center pointer-events-none z-50"
           >
@@ -173,8 +196,12 @@
             class="w-full h-full hover-zoom"
             src="~/assets/images/lab.jpg"
           />
-        </div>
-        <div class="w-1/2 relative overflow-hidden" style="height: 23vw">
+        </g-link>
+        <g-link
+          to="/fuse"
+          class="w-1/2 relative overflow-hidden"
+          style="height: 23vw"
+        >
           <div
             class="absolute w-full h-full zonapro-bold text-white xl:text-4xl text-xl flex justify-center items-center pointer-events-none z-50"
           >
@@ -184,8 +211,12 @@
             class="w-full h-full hover-zoom"
             src="~/assets/images/fuse.jpg"
           />
-        </div>
-        <div class="w-1/2 relative overflow-hidden" style="height: 23vw">
+        </g-link>
+        <g-link
+          to="/step"
+          class="w-1/2 relative overflow-hidden"
+          style="height: 23vw"
+        >
           <div
             class="absolute w-full h-full zonapro-bold text-white xl:text-4xl text-xl flex justify-center items-center pointer-events-none z-50"
           >
@@ -195,7 +226,7 @@
             class="w-full h-full hover-zoom"
             src="~/assets/images/step.jpg"
           />
-        </div>
+        </g-link>
       </div>
     </section>
     <section ref="section4" id="section4">section4</section>
