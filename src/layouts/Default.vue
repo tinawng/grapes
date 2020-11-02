@@ -1,5 +1,6 @@
 <template>
   <div class="bg-brand-white text-brand-black flex justify-center">
+    <ScreenDebug/>
     <NavUI />
     <div class="w-full flex flex-col items-center zonapro-extralight">
       <slot />
@@ -9,9 +10,11 @@
 
 <script>
 import NavUI from "~/components/NavUI.vue";
+import ScreenDebug from "~/components/ScreenDebug.vue";
 export default {
   components: {
     NavUI,
+    ScreenDebug
   },
 };
 </script>
@@ -29,10 +32,10 @@ button:focus {
 }
 
 .slide-fade-enter-active {
-  transition: all .414s ease-out;
+  transition: all .616s ease-out;
 }
 .slide-fade-leave-active {
-  transition: all .414s ease-out;
+  transition: all .616s ease-out;
 }
 .slide-fade-enter, .slide-fade-leave-to {
   transform: translatey(10vw);
