@@ -69,7 +69,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .dimensions {
   width: 70%;
   max-width: 1333px;
@@ -79,4 +79,7 @@ export default {
 .text-5xl {
   font-size: 2.4rem;
 }
+
+$aos-distance: 20px;
+@import 'node_modules/aos/src/sass/aos.scss';
 </style>
