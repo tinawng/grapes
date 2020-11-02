@@ -6,14 +6,18 @@ module.exports = {
         'portrait': { 'raw': '(orientation: portrait)' },
         'lg': '1280px',
         'xl': '1600px',
+        'xxl': '2000px',
       },
       fontSize: {
+        'xxs': '.5rem',
         '7xl': '5rem',
       },
       height: {
         '72': '20rem',
 
         '60': '60%',
+        '70': '70%',
+        '80': '80%',
         '90': '90%',
         '95': '95%',
       },
