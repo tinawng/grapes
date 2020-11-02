@@ -231,13 +231,11 @@ export default {
     intersectionTrigger(this.$refs["section5"], () => {
       setTimeout(() => {
         self.show = true;
-        console.log("true");
       }, 100);
     });
 
     this.$event_bus.$on("scrolling", () => {
       self.show = false;
-      console.log("false");
     });
 
     window.onscroll = function () {
