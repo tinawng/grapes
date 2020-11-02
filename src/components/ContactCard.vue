@@ -2,7 +2,7 @@
   <div
     class="dimensions bg-white py-8 lg:py-10 px-16 xl:px-24 flex items-center border portrait:flex-col-reverse"
   >
-    <div class="flex flex-col flex-grow justify-between h-90 lg:h-80 xl:h-70">
+    <div class="flex flex-col flex-grow justify-between h-90 md:h-80 xl:h-70">
       <span
         class="text-xxs lg:text-xs xl:text-sm"
         data-aos="fade-up"
@@ -40,7 +40,7 @@
     </div>
     <div class="flex flex-col justify-between items-center h-full xl:h-95">
       <g-image
-        class="h-20 w-20 lg:w-48 lg:h-48 xl:h-64 xl:w-64 rounded-full"
+        class="h-20 w-20 md:w-32 md:h-32 lg:w-48 lg:h-48 xl:h-64 xl:w-64 rounded-full"
         src="~/assets/images/tina.jpg"
       />
       <div class="flex flex-col items-center">
