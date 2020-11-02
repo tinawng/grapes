@@ -32,6 +32,7 @@
             on creative workflow.</span
           >
           <g-link
+            class="text-brand-black"
             to="/fuse/audiofuse-studio"
             data-aos="fade-up"
             data-aos-duration="2000"
@@ -94,6 +95,7 @@
 
           <g-link
             to="/brute/polybrute"
+            class="text-brand-black"
             data-aos="fade-up"
             data-aos-duration="1600"
             data-aos-delay="400"
