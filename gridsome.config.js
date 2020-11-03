@@ -25,7 +25,7 @@ let plugins = [
   {
     use: '@gridsome/source-filesystem',
     options: {
-      path: 'assets/data/markdown/**/*.md',
+      path: './src/assets/data/markdown/**/*.md',
       typeName: 'Post',
     },
   }
