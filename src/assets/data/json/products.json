@@ -1,0 +1,14 @@
+[
+    {
+        "name": "matrix",
+        "range": "brute"
+    },
+    {
+        "name": "poly",
+        "range": "brute"
+    },
+    {
+        "name": "studio",
+        "range": "fuse"
+    }
+]
