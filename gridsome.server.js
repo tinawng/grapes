@@ -6,6 +6,15 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = function(api) {
+  api.loadSource(async actions => {
+    const products = require('./src/assets/data/json/products.json');
+    const collection = actions.addCollection("Products");
+
+    for (const product of products) {
+      collection.addNode(product);
+    }
+  })
+
   api.loadSource(({ addCollection }) => {
     // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
   })

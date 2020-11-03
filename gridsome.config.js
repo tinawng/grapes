@@ -22,6 +22,13 @@ let plugins = [
       */
     },
   },
+  {
+    use: '@gridsome/source-filesystem',
+    options: {
+      path: 'assets/data/markdown/**/*.md',
+      typeName: 'Post',
+    },
+  }
 ]
 
 if (GOOGLE_ANALYTICS_ID || process.env.GOOGLE_ANALYTICS_ID) {
