@@ -1,5 +1,5 @@
 <template>
-  <div ref="element" class="fix-width border-style"></div>
+  <div ref="element" class="border-style"></div>
 </template>
 
 <script>
@@ -9,10 +9,14 @@ export default {
       type: String,
       default: "3rem"
     },
+    thin: {
+      type: Boolean
+    },
   },
   mounted() {
     const element = this.$refs["element"];
-    element.style.width = this.width
+    element.style.width = this.width;
+    if (this.thin) element.style.borderWidth = "thin";
   }
 };
 </script>
@@ -21,7 +25,4 @@ export default {
 .border-style {
   border-bottom: 2px solid black;
 }
-/* .fix-width {
-  width: 3rem;
-} */
 </style>
