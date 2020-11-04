@@ -6,6 +6,8 @@ published: true
 
 # Mobile app demo
 
+![an image](/images/products/polybrute/thumbnail.png)
+
 They never said winning was easy. Some people can’t handle success, I can. The key is to drink coconut, fresh coconut, trust me. Give thanks to the most high. Surround yourself with angels. They don’t want us to win. Give thanks to the most high. Give thanks to the most high. Fan luv. You should never complain, complaining is a weak emotion, you got life, we breathing, we blessed. We don’t see them, we will never see them. Surround yourself with angels, positive energy, beautiful people, beautiful souls, clean heart, angel.
 
 ## This is a heading
