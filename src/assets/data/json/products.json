@@ -4,14 +4,16 @@
         "range": "brute",
         "baseline": "More than a synthesizer. It's a 6-voice analog powerhouse, with unprecedented expressivity and sound morphing capabilities.",
         "price": "2499",
-        "thumbnail": "/images/products/polybrute/thumbnail.png"
+        "thumbnail": "/images/products/polybrute/thumbnail.png",
+        "order": 0
     },
     {
         "name": "matrixbrute",
         "range": "brute",
         "baseline": "Arguably the most power analog monophonic synthesizer ever.",
         "price": "2299",
-        "thumbnail": "/images/products/matrixbrute/thumbnail.png"
+        "thumbnail": "/images/products/matrixbrute/thumbnail.png",
+        "order": 1
     },
     {
         "name": "microfreak",
