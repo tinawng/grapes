@@ -4,9 +4,6 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
-// Google analytics is enabled only if this OR environment variable by the same name is set
-const GOOGLE_ANALYTICS_ID = undefined
-
 // Configure plugins here
 let plugins = [
   {
@@ -26,19 +23,10 @@ let plugins = [
     use: '@gridsome/source-filesystem',
     options: {
       path: './src/assets/data/markdown/**/*.md',
-      typeName: 'Post',
+      typeName: 'Post'
     },
   }
 ]
-
-if (GOOGLE_ANALYTICS_ID || process.env.GOOGLE_ANALYTICS_ID) {
-  plugins.push({
-    use: '@gridsome/plugin-google-analytics',
-    options: {
-      id: GOOGLE_ANALYTICS_ID || process.env.GOOGLE_ANALYTICS_ID,
-    },
-  })
-}
 
 module.exports = {
   siteName: 'Grapes',
