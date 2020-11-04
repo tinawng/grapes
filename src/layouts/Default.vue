@@ -1,7 +1,7 @@
 <template>
   <div class="bg-brand-white text-brand-black flex justify-center">
     <ScreenDebug />
-    <div :class="{ flex: nav_floating }">
+    <div :class="[nav_floating ? 'flex' : '', 'w-full']">
       <NavUI
         :nav_floating="nav_floating"
         :nav_shifted_left="nav_shifted_left"
