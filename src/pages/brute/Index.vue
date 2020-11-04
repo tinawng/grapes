@@ -1,26 +1,30 @@
 <template>
   <!-- https://www.sonos.com/fr-fr/products/wireless-speakers -->
   <Layout>
-    <span>brute</span>
-    <div v-for="edge in $page.products.edges" :key="edge.node.name">
+    <section v-for="(edge, index) in $page.products.edges" :key="index">
+      <g-image :src="edge.node.thumbnail"/>
       <h2>{{ edge.node }}</h2>
-    </div>
+    </section>
   </Layout>
 </template>
 
 <script>
-export default {};
+export default {
+  data: () => ({
+    range: "brute",
+  }),
+};
 </script>
 
 <page-query>
 query {
-  products: allProducts {
+  products: allProducts(filter: {range: { eq: "brute"}}) {
     edges {
       node {
         name
-        range
         baseline
         price
+        thumbnail
       }
     }
   }
