@@ -1,17 +1,17 @@
 <template>
   <div class="z-50">
-    <div class="fixed w-full flex justify-between" style="top: 3vw; left: 3vw">
+    <div :class="[nav_floating ? 'fixed' : '', 'w-full flex justify-between']" style="top: 0; left: 0">
       <div
         :class="[
           nav_shifted_left ? 'nav-shifted-left' : 'slow-transition',
-          'w-full pr-12 flex items-center justify-between ',
+          'global-paddings w-full flex items-center justify-between',
         ]"
       >
         <span class="zonapro-bold xl:text-2xl text-md"> _ARTURIA</span>
         <div
           :class="[
             nav_hidden ? 'opacity-0' : '',
-            'w-35vw flex justify-around zonapro-extralight xl:text-lg text-sm',
+            'w-30vw flex justify-between zonapro-extralight xl:text-lg text-sm',
           ]"
         >
           <span>RANGES</span>
@@ -43,16 +43,16 @@
 
 <script>
 export default {
+  props: ["nav_floating", "nav_shifted_left"],
   data: () => ({
-    nav_shifted_left: true,
     nav_hidden: false,
   }),
 
   mounted() {
-    this.$event_bus.$on('scrolling', () => {
+    this.$event_bus.$on("scrolling", () => {
       this.nav_hidden = window.pageYOffset >= 100;
       this.nav_shifted_left = window.pageYOffset < 100;
-    })
+    });
   },
 
   methods: {
@@ -70,8 +70,8 @@ export default {
 .nav-shifted-left {
   padding-right: 35vw;
 }
-.w-35vw {
-  width: 35vw;
+.w-30vw {
+  width: 30vw;
 }
 .opacity-0 {
   transition: opacity 0.414s ease-in;

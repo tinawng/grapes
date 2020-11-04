@@ -1,9 +1,14 @@
 <template>
   <div class="bg-brand-white text-brand-black flex justify-center">
-    <ScreenDebug/>
-    <NavUI />
-    <div class="w-full flex flex-col items-center zonapro-extralight">
-      <slot />
+    <ScreenDebug />
+    <div :class="{ flex: nav_floating }">
+      <NavUI
+        :nav_floating="nav_floating"
+        :nav_shifted_left="nav_shifted_left"
+      />
+      <div class="w-full flex flex-col items-center zonapro-extralight">
+        <slot />
+      </div>
     </div>
   </div>
 </template>
@@ -14,8 +19,9 @@ import ScreenDebug from "~/components/ScreenDebug.vue";
 export default {
   components: {
     NavUI,
-    ScreenDebug
+    ScreenDebug,
   },
+  props: ["nav_floating", "nav_shifted_left"],
 };
 </script>
 
@@ -32,12 +38,13 @@ button:focus {
 }
 
 .slide-fade-enter-active {
-  transition: all .616s ease-out;
+  transition: all 0.616s ease-out;
 }
 .slide-fade-leave-active {
-  transition: all .616s ease-out;
+  transition: all 0.616s ease-out;
 }
-.slide-fade-enter, .slide-fade-leave-to {
+.slide-fade-enter,
+.slide-fade-leave-to {
   transform: translatey(10vw);
   opacity: 0;
 }

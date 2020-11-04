@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <Layout :nav_floating="true" :nav_shifted_left="true">
     <section ref="section1" id="section1">
       <div class="h-full w-1/2 flex flex-col justify-center">
         <div class="flex flex-col justify-between xl:h-72 h-64">
@@ -47,7 +47,7 @@
         </div>
         <g-image
           class="absolute-image"
-          src="~/assets/images/audiofuse-studio.png"
+          src="@images/audiofuse-studio.png"
         />
       </div>
     </section>
@@ -55,7 +55,7 @@
       <div class="relative" style="flex-basis: 48%">
         <g-image
           class="absolute"
-          src="~/assets/images/polybrute.jpg"
+          src="@images/polybrute.jpg"
           style="left: -9vw; top: 3vw"
         />
       </div>
@@ -165,7 +165,7 @@
           </div>
           <g-image
             class="w-full h-fullz hover-zoom"
-            src="~/assets/images/brute.jpg"
+            src="@images/brute.jpg"
             style="object-fit: none"
           />
         </g-link>
@@ -181,7 +181,7 @@
           </div>
           <g-image
             class="w-full h-full hover-zoom"
-            src="~/assets/images/freak.jpg"
+            src="@images/freak.jpg"
           />
         </g-link>
         <g-link
@@ -196,7 +196,7 @@
           </div>
           <g-image
             class="w-full h-full hover-zoom"
-            src="~/assets/images/lab.jpg"
+            src="@images/lab.jpg"
           />
         </g-link>
         <g-link
@@ -211,7 +211,7 @@
           </div>
           <g-image
             class="w-full h-full hover-zoom"
-            src="~/assets/images/fuse.jpg"
+            src="@images/fuse.jpg"
           />
         </g-link>
         <g-link
@@ -226,7 +226,7 @@
           </div>
           <g-image
             class="w-full h-full hover-zoom"
-            src="~/assets/images/step.jpg"
+            src="@images/step.jpg"
           />
         </g-link>
       </div>
