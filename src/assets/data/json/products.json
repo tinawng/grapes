@@ -2,7 +2,7 @@
     {
         "name": "polybrute",
         "range": "brute",
-        "baseline": "More than a synthesizer. It's a 6-voice analog powerhouse, with unprecedented expressivity and sound morphing capabilities.",
+        "baseline": "6-voices analog powerhouse, with unprecedented expressivity and sound morphing capabilities.",
         "price": "2499",
         "thumbnail": "/images/products/polybrute/thumbnail.png",
         "order": 0
@@ -14,6 +14,15 @@
         "price": "2299",
         "thumbnail": "/images/products/matrixbrute/thumbnail.png",
         "order": 1
+    },
+    {
+        "name": "minibrute",
+        "range": "brute",
+        "baseline": "Addictive, inspiring step-sequencing synth with huge modular capabilities.",
+        "price": "449",
+        "thumbnail": "/images/products/minibrute/thumbnail.png",
+        "variants": ["2", "2S"],
+        "order": 2
     },
     {
         "name": "microfreak",
