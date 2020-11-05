@@ -3,10 +3,12 @@
   <Layout>
     <section v-for="(edge, index) in $page.products.edges" :key="index">
       <div class="flex justify-between aa">
-        <g-image :src="edge.node.thumbnail" class="h-32" />
-        <div class="flex-col">
-          <span class="uppercase" v-html="formatProductName(edge.node.name)">
-          </span>
+        <g-image :src="edge.node.thumbnail" class="h-48" />
+        <div class="my-auto ml-auto w-1/3 flex flex-col content-between h-48">
+          <div class="mb-1 text-3xl uppercase" v-html="formatProductName(edge.node.name)">
+          </div>
+          <div class="text-md">{{edge.node.baseline}}</div>
+          <div class="mt-auto text-md"><strong>${{edge.node.price}}</strong> </div>
         </div>
       </div>
       <Spacer width="100%" :thin="true" />
