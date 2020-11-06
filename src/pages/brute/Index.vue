@@ -1,7 +1,27 @@
 <template>
   <!-- https://www.sonos.com/fr-fr/products/wireless-speakers -->
-  <Layout>
-    <div class="w-full bg-black">brute</div>
+  <Layout
+    :nav_floating="true"
+    nav_border_color="#DA5447"
+    :content_divide="true"
+  >
+    <div class="w-full bg-black relative">
+      <div
+        class="absolute w-full h-full flex justify-center items-center"
+        style="top: 12.5%"
+      >
+        <span
+          class="pl-16 pr-12 border text-6xl text-white"
+          style="letter-spacing: 2rem"
+          >BRUTE</span
+        >
+      </div>
+      <g-image
+        class="w-full"
+        src="@images/brute.jpg"
+        style="height: 60vh; object-fit: none"
+      />
+    </div>
     <section v-for="(edge, index) in $page.products.edges" :key="index">
       <div class="flex justify-between items-center aa">
         <g-image
@@ -38,7 +58,6 @@
           </div>
         </div>
       </div>
-      <Spacer width="100%" :thin="true" />
     </section>
   </Layout>
 </template>
