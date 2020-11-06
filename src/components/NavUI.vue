@@ -1,6 +1,9 @@
 <template>
   <div class="z-50">
-    <div :class="[nav_floating ? 'fixed' : '', 'w-full flex justify-between']" style="top: 0; left: 0">
+    <div
+      :class="[nav_floating ? 'fixed' : '', nav_border_color ? 'bg-brand-white border-bottom ' : '', 'w-full flex justify-between']"
+      :style="'top: 0; left: 0; border-color: ' + nav_border_color"
+    >
       <div
         :class="[
           nav_shifted_left ? 'nav-shifted-left' : 'slow-transition',
@@ -43,7 +46,7 @@
 
 <script>
 export default {
-  props: ["nav_floating", "nav_shifted_left"],
+  props: ["nav_floating", "nav_shifted_left", "nav_border_color"],
   data: () => ({
     nav_hidden: false,
   }),
@@ -75,5 +78,8 @@ export default {
 }
 .opacity-0 {
   transition: opacity 0.414s ease-in;
+}
+.border-bottom {
+  border-bottom: 1px solid;
 }
 </style>

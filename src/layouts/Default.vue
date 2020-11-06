@@ -5,8 +5,11 @@
       <NavUI
         :nav_floating="nav_floating"
         :nav_shifted_left="nav_shifted_left"
+        :nav_border_color="nav_border_color"
       />
-      <div class="w-full flex flex-col items-center zonapro-extralight">
+      <div
+        :class="[content_divide ? 'divide-y divide-brand-black':'', 'w-full flex flex-col items-center zonapro-extralight']"
+      >
         <slot />
       </div>
     </div>
@@ -21,7 +24,7 @@ export default {
     NavUI,
     ScreenDebug,
   },
-  props: ["nav_floating", "nav_shifted_left"],
+  props: ["nav_floating", "nav_shifted_left", "nav_border_color", "content_divide"],
 };
 </script>
 
