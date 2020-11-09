@@ -14,9 +14,9 @@
         >
       </div>
       <g-image
-        class="w-full"
+        class="w-full cc"
         src="@images/brute.jpg"
-        style="height: 45vh; object-fit: none"
+        style="object-fit: none"
       />
     </div>
     <section v-for="(edge, index) in $page.products.edges" :key="index">
@@ -114,18 +114,32 @@ query {
   padding: 4.5vw;
 }
 
+.cc {
+  height: 45vh;
+  animation-name: dd;
+  animation-duration: 3s;
+}
+@keyframes dd {
+  from {
+    height: 16vh;
+  }
+  to {
+    height: 45vh;
+  }
+}
+
 .bb {
   font-weight: 600;
   letter-spacing: 4vw;
   margin-left: 4vw;
-  animation-duration: 4s;
   animation-name: letter-spacing;
+  animation-duration: 4s;
 }
 @keyframes letter-spacing {
   from {
     letter-spacing: 1vw;
     /* Should be 1vw but -1vw to create motion */
-    margin-left: -1vw; 
+    margin-left: -1vw;
   }
   to {
     letter-spacing: 4vw;
