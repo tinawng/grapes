@@ -16,7 +16,7 @@
       <g-image
         class="w-full cc"
         src="@images/brute.jpg"
-        style="object-fit: none"
+        style="object-fit: cover"
       />
     </div>
     <section v-for="(edge, index) in $page.products.edges" :key="index">
