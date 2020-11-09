@@ -22,7 +22,11 @@ module.exports = {
         '95': '95%',
       },
       borderWidth: {
+        '3': '3px',
         '5': '5px'
+      },
+      letterSpacing: {
+        '5': '.5rem'
       },
       colors: {
         'brand-white': '#FAFAFA',
