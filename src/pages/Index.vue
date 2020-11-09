@@ -155,44 +155,44 @@
 
         <g-link
           to="/brute"
-          class="w-1/2 relative overflow-hidden"
+          class="relative w-1/2 overflow-hidden"
           style="height: 23vw"
         >
           <div
-            class="absolute w-full h-full zonapro-bold text-white xl:text-4xl text-xl flex justify-center items-center pointer-events-none z-50"
+            class="absolute w-full h-full pointer-events-none z-10 flex justify-center items-center"
           >
-            <div class="xl:border-5 border-4 px-8 py-1">BRUTE</div>
+            <span class="px-8 py-1 bg-brand-white text-xl xl:text-4xl text-red-800 font-bold tracking-5">BRUTE</span>
           </div>
           <g-image
-            class="w-full h-fullz hover-zoom"
+            class="w-full h-full object-cover hover-zoom"
             src="@images/brute.jpg"
             style="object-fit: none"
           />
         </g-link>
         <g-link
           to="/freak"
-          class="w-1/2 relative overflow-hidden"
+          class="relative w-1/2 overflow-hidden"
           style="height: 23vw"
         >
           <div
-            class="absolute w-full h-full zzonapro-bold font-bold text-white xl:text-4xl text-xl flex justify-center items-center pointer-events-none z-50"
+            class="absolute w-full h-full pointer-events-none z-10 flex justify-center items-center"
           >
-            <div class="xl:border-5 border-2 px-8 py-1" style="letter-spacing: .5rem">FREAK</div>
+            <span class="px-8 py-1 bg-brand-white text-xl xl:text-4xl text-yellow-700 font-bold tracking-5">FREAK</span>
           </div>
           <g-image
-            class="w-full h-full hover-zoom"
+            class="w-full h-full object-cover hover-zoom"
             src="@images/freak.jpg"
           />
         </g-link>
         <g-link
           to="/lab"
-          class="w-full relative overflow-hidden"
+          class="relative w-full overflow-hidden"
           style="height: 23vw"
         >
           <div
-            class="absolute w-full h-full zonapro-bold text-white xl:text-4xl text-xl flex justify-center items-center pointer-events-none z-50"
+            class="absolute w-full h-full pointer-events-none z-10 flex justify-center items-center"
           >
-            <div class="xl:border-5 border-4 px-8 py-1">LAB</div>
+            <span class="px-8 py-1 bg-brand-white text-xl xl:text-4xl text-deepskyblue-200 font-bold tracking-5">LAB</span>
           </div>
           <g-image
             class="w-full h-full hover-zoom"
@@ -201,13 +201,13 @@
         </g-link>
         <g-link
           to="/fuse"
-          class="w-1/2 relative overflow-hidden"
+          class="relative w-1/2 overflow-hidden"
           style="height: 23vw"
         >
           <div
-            class="absolute w-full h-full zonapro-bold text-white xl:text-4xl text-xl flex justify-center items-center pointer-events-none z-50"
+            class="absolute w-full h-full pointer-events-none z-10 flex justify-center items-center"
           >
-            <div class="xl:border-5 border-4 px-8 py-1">FUSE</div>
+            <span class="px-8 py-1 bg-brand-white text-xl xl:text-4xl text-blue-600 font-bold tracking-5">FUSE</span>
           </div>
           <g-image
             class="w-full h-full hover-zoom"
@@ -216,13 +216,13 @@
         </g-link>
         <g-link
           to="/step"
-          class="w-1/2 relative overflow-hidden"
+          class="relative w-1/2 overflow-hidden"
           style="height: 23vw"
         >
           <div
-            class="absolute w-full h-full zonapro-bold text-white xl:text-4xl text-xl flex justify-center items-center pointer-events-none z-50"
+            class="absolute w-full h-full pointer-events-none z-10 flex justify-center items-center"
           >
-            <div class="xl:border-5 border-4 px-8 py-1">STEP</div>
+            <span class="px-8 py-1 bg-brand-white text-xl xl:text-4xl text-gray-700 font-bold tracking-5">STEP</span>
           </div>
           <g-image
             class="w-full h-full hover-zoom"
