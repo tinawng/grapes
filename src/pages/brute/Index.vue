@@ -56,14 +56,19 @@
         </div>
       </div>
     </section>
+    <section>
+      <ContactCard class="my-32 mx-auto" />
+    </section>
   </Layout>
 </template>
 
 <script>
 import Spacer from "~/components/Spacer.vue";
+import ContactCard from "~/components/ContactCard.vue";
 export default {
   components: {
     Spacer,
+    ContactCard,
   },
 
   data: () => ({
