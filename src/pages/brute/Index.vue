@@ -6,20 +6,17 @@
     :content_divide="true"
   >
     <div class="w-full bg-black relative">
-      <div
-        class="absolute w-full h-full flex justify-center items-center"
-        style="top: 12.5%"
-      >
+      <div class="absolute w-full h-full flex justify-center items-center">
         <span
-          class="pl-16 pr-12 border text-6xl text-white"
-          style="letter-spacing: 2rem"
+          class="absolute pl-16 pr-12 zborder text-6xl text-white bb"
+          style="bottom: 15%"
           >BRUTE</span
         >
       </div>
       <g-image
         class="w-full"
         src="@images/brute.jpg"
-        style="height: 60vh; object-fit: none"
+        style="height: 45vh; object-fit: none"
       />
     </div>
     <section v-for="(edge, index) in $page.products.edges" :key="index">
@@ -115,6 +112,25 @@ query {
 <style scoped>
 .aa {
   padding: 4.5vw;
+}
+
+.bb {
+  font-weight: 600;
+  letter-spacing: 4vw;
+  margin-left: 4vw;
+  animation-duration: 4s;
+  animation-name: letter-spacing;
+}
+@keyframes letter-spacing {
+  from {
+    letter-spacing: 1vw;
+    /* Should be 1vw but -1vw to create motion */
+    margin-left: -1vw; 
+  }
+  to {
+    letter-spacing: 4vw;
+    margin-left: 4vw;
+  }
 }
 
 section {
