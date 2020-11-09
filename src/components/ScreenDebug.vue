@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed top-0 left-0 zonapro-extralight text-xs">
+  <div class="z-50 fixed top-0 left-0 zonapro-extralight text-xs">
     <span class="hidden xl:contents">XL </span>
     <span class="hidden lg:contents">LG </span>
     <span class="hidden md:contents">MD </span>

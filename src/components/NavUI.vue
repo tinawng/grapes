@@ -1,5 +1,5 @@
 <template>
-  <div class="z-50">
+  <div class="z-40">
     <div
       :class="[nav_floating ? 'fixed' : '', nav_border_color ? 'bg-brand-white border-bottom ' : '', 'w-full flex justify-between']"
       :style="'top: 0; left: 0; border-color: ' + nav_border_color"
