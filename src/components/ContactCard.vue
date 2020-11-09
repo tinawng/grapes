@@ -8,7 +8,7 @@
         data-aos="fade-up"
         :data-aos-duration="duration"
         data-aos-delay="0"
-        >THIS IS JUST THE BEGINNING</span
+        >IT'S JUST THE BEGINNING</span
       >
       <Spacer
         data-aos="fade-up"
