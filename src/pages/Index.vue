@@ -1,6 +1,6 @@
 <template>
   <Layout :nav_floating="true" :nav_shifted_left="true">
-    <section ref="section1" id="section1">
+    <section ref="section1" id="section1" class="relative">
       <div class="h-full w-1/2 flex flex-col justify-center">
         <div class="flex flex-col justify-between xl:h-72 h-64">
           <span
@@ -45,13 +45,10 @@
             </button>
           </g-link>
         </div>
-        <g-image
-          class="absolute-image"
-          src="@images/audiofuse-studio.png"
-        />
+        <g-image class="absolute-image" src="@images/audiofuse-studio.png" />
       </div>
     </section>
-    <section ref="section2" id="section2" class="flex">
+    <section ref="section2" id="section2" class="relative flex">
       <div class="relative" style="flex-basis: 48%">
         <g-image
           class="absolute"
@@ -115,7 +112,7 @@
     </section>
     <section ref="section3" id="section3">
       <div class="flex flex-wrap">
-        <div class="w-1/2 flex h-1/2 items-center" style="padding-top: 5vh">
+        <div class="w-1/2 flex h-1/2 items-center">
           <div class="flex flex-col justify-between xl:h-32 h-24">
             <span
               class="xl:text-lg text-sm"
@@ -138,7 +135,7 @@
             >
           </div>
         </div>
-        <div class="w-1/2 flex h-1/2 items-center" style="padding-top: 5vh">
+        <div class="w-1/2 flex h-1/2 items-center">
           <div class="flex flex-col justify-between xl:h-32 h-24">
             <span
               class="mt-4 xl:text-lg text-sm"
@@ -161,7 +158,10 @@
           <div
             class="absolute w-full h-full pointer-events-none z-10 flex justify-center items-center"
           >
-            <span class="px-8 py-1 bg-brand-white text-xl xl:text-4xl text-red-800 font-bold tracking-5">BRUTE</span>
+            <span
+              class="px-8 py-1 bg-brand-white text-xl xl:text-3xl text-red-800 font-bold tracking-5"
+              >BRUTE</span
+            >
           </div>
           <g-image
             class="w-full h-full object-cover hover-zoom"
@@ -177,7 +177,10 @@
           <div
             class="absolute w-full h-full pointer-events-none z-10 flex justify-center items-center"
           >
-            <span class="px-8 py-1 bg-brand-white text-xl xl:text-4xl text-yellow-700 font-bold tracking-5">FREAK</span>
+            <span
+              class="px-8 py-1 bg-brand-white text-xl xl:text-3xl text-yellow-700 font-bold tracking-5"
+              >FREAK</span
+            >
           </div>
           <g-image
             class="w-full h-full object-cover hover-zoom"
@@ -192,12 +195,12 @@
           <div
             class="absolute w-full h-full pointer-events-none z-10 flex justify-center items-center"
           >
-            <span class="px-8 py-1 bg-brand-white text-xl xl:text-4xl text-deepskyblue-200 font-bold tracking-5">LAB</span>
+            <span
+              class="px-8 py-1 bg-brand-white text-xl xl:text-3xl text-deepskyblue-200 font-bold tracking-5"
+              >LAB</span
+            >
           </div>
-          <g-image
-            class="w-full h-full hover-zoom"
-            src="@images/lab.jpg"
-          />
+          <g-image class="w-full h-full hover-zoom" src="@images/lab.jpg" />
         </g-link>
         <g-link
           to="/fuse"
@@ -207,12 +210,12 @@
           <div
             class="absolute w-full h-full pointer-events-none z-10 flex justify-center items-center"
           >
-            <span class="px-8 py-1 bg-brand-white text-xl xl:text-4xl text-blue-600 font-bold tracking-5">FUSE</span>
+            <span
+              class="px-8 py-1 bg-brand-white text-xl xl:text-3xl text-blue-600 font-bold tracking-5"
+              >FUSE</span
+            >
           </div>
-          <g-image
-            class="w-full h-full hover-zoom"
-            src="@images/fuse.jpg"
-          />
+          <g-image class="w-full h-full hover-zoom" src="@images/fuse.jpg" />
         </g-link>
         <g-link
           to="/step"
@@ -222,12 +225,12 @@
           <div
             class="absolute w-full h-full pointer-events-none z-10 flex justify-center items-center"
           >
-            <span class="px-8 py-1 bg-brand-white text-xl xl:text-4xl text-gray-700 font-bold tracking-5">STEP</span>
+            <span
+              class="px-8 py-1 bg-brand-white text-xl xl:text-3xl text-gray-700 font-bold tracking-5"
+              >STEP</span
+            >
           </div>
-          <g-image
-            class="w-full h-full hover-zoom"
-            src="@images/step.jpg"
-          />
+          <g-image class="w-full h-full hover-zoom" src="@images/step.jpg" />
         </g-link>
       </div>
     </section>
@@ -294,7 +297,7 @@ export default {
 }
 .absolute-image {
   position: absolute;
-  right: 3vw;
+  right: -3vw;
   top: 0;
   height: 100%;
   width: auto;
@@ -302,6 +305,7 @@ export default {
 
 section {
   height: 100vh;
+  max-height: calc(100vw * 0.456);
   width: calc(100vw - 19vw);
 }
 </style>
