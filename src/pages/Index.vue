@@ -175,9 +175,9 @@
           style="height: 23vw"
         >
           <div
-            class="absolute w-full h-full zonapro-bold text-white xl:text-4xl text-xl flex justify-center items-center pointer-events-none z-50"
+            class="absolute w-full h-full zzonapro-bold font-bold text-white xl:text-4xl text-xl flex justify-center items-center pointer-events-none z-50"
           >
-            <div class="xl:border-5 border-4 px-8 py-1">FREAK</div>
+            <div class="xl:border-5 border-2 px-8 py-1" style="letter-spacing: .5rem">FREAK</div>
           </div>
           <g-image
             class="w-full h-full hover-zoom"
