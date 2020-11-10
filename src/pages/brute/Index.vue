@@ -122,7 +122,7 @@ query {
 .cc {
   height: 45vh;
   animation-name: dd;
-  animation-duration: 3s;
+  animation-duration: 2.5s;
 }
 @keyframes dd {
   from {
@@ -138,7 +138,7 @@ query {
   letter-spacing: 4vw;
   margin-left: 4vw;
   animation-name: letter-spacing;
-  animation-duration: 4s;
+  animation-duration: 3s;
 }
 @keyframes letter-spacing {
   from {
