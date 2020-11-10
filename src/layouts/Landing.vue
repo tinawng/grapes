@@ -1,6 +1,6 @@
 <template>
   <div class="bg-brand-white text-brand-black flex justify-center">
-    <ScreenDebug />
+    <!-- <ScreenDebug /> -->
     <div :class="[nav_floating ? 'flex' : '', 'w-full']">
       <NavUI
         :nav_floating="nav_floating"
@@ -53,31 +53,31 @@ button:focus {
 }
 
 .zonapro-extralight {
-  font-family: "ZonaPro ExtraLight";
+  font-family: "Zona Pro ExtraLight";
 }
-.zonapro-light {
-  font-family: "ZonaPro Light";
-}
-.zonapro-regular {
-  font-family: "ZonaPro Regular";
-}
+/* .zonapro-light {
+  font-family: "Zona Pro Light";
+} */
+/* .zonapro-regular {
+  font-family: "Zona Pro Regular";
+} */
 .zonapro-bold {
-  font-family: "ZonaPro Bold";
+  font-family: "Zona Pro Bold";
 }
 @font-face {
-  font-family: "ZonaPro ExtraLight";
+  font-family: "Zona Pro ExtraLight";
   src: url("../assets/fonts/ZonaPro-ExtraLight.otf");
 }
-@font-face {
-  font-family: "ZonaPro Light";
+/* @font-face {
+  font-family: "Zona Pro Light";
   src: url("../assets/fonts/ZonaPro-Light.ttf");
-}
-@font-face {
-  font-family: "ZonaPro Regular";
+} */
+/* @font-face {
+  font-family: "Zona Pro Regular";
   src: url("../assets/fonts/ZonaPro-Regular.ttf");
-}
+} */
 @font-face {
-  font-family: "ZonaPro Bold";
+  font-family: "Zona Pro Bold";
   src: url("../assets/fonts/ZonaPro-Bold.otf");
 }
 </style>

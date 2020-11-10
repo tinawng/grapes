@@ -245,11 +245,13 @@
 
 <script>
 import { intersectionTrigger } from "~/libs/IntersectionHelper.js";
+import Layout from "~/layouts/Landing.vue";
 import ContactCardModal from "~/components/ContactCardModal.vue";
 import Spacer from "~/components/Spacer.vue";
 
 export default {
   components: {
+    Layout,
     ContactCardModal,
     Spacer,
   },
@@ -305,7 +307,7 @@ export default {
 
 section {
   height: 100vh;
-  max-height: calc(100vw * 0.456);
+  max-height: calc(100vw * 0.47);
   width: calc(100vw - 19vw);
 }
 </style>
