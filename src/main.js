@@ -15,7 +15,7 @@ const VueScrollTo = require('vue-scrollto')
 
 export default function (Vue, { router, head, isClient }) {
 
-  //load first
+  // ⚡️ Preload fonts before browser start parsing CSS to find them
   head.link.push({ rel: "preload", href: ZonaProExtraLight, as: "font", crossorigin: "" })
   head.link.push({ rel: "preload", href: ZonaProBold, as: "font", crossorigin: "" })
 
