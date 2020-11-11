@@ -1,44 +1,93 @@
 html {
+  font-family: "Zona Pro ExtraLight";
   font-size: 18px;
-}
-
-h1 {
-  @apply text-6xl
-}
-
-h2,
-h3,
-h4,
-h5 {
-  @apply mb-2 text-gray-900;
-}
-
-h2 {
-  @apply text-3xl mt-6;
-}
-
-h3 {
-  @apply text-xl font-bold mt-8;
-}
-
-h4 {
-  @apply text-base font-bold font-sans mt-6;
-}
-
-p {
-  @apply mb-4;
-}
-
-ul {
-  @apply list-disc;
-}
-
-li {
-  @apply list-inside pl-4;
+  @apply text-brand-black;
 }
 
 strong {
   font-family: "Zona Pro Bold";
+}
+
+h1, h2, h5 {
+  @apply uppercase;
+}
+h3, h4 {
+  @apply capitalize;
+}
+h1::before, h2::before {
+  content: '_';
+}
+
+h1 {
+  @apply text-2xl leading-none;
+
+  @screen md {
+    @apply text-3xl;
+  };
+
+  @screen lg {
+    @apply text-4xl;
+  };
+
+  @screen xl {
+    @apply text-5xl;
+  };
+}
+h2 {
+  @apply text-xl;
+
+  @screen md {
+    @apply text-2xl;
+  };
+
+  @screen lg {
+    @apply text-3xl;
+  };
+
+  @screen xl {
+    @apply text-4xl;
+  };
+}
+h3 {
+  @apply text-2xl leading-none;
+
+  @screen md {
+    @apply text-3xl;
+  };
+
+  @screen lg {
+    @apply text-4xl;
+  };
+
+  @screen xl {
+    @apply text-5xl;
+  };
+}
+h4 {
+  @apply text-md;
+
+  @screen lg {
+    @apply text-lg;
+  };
+
+  @screen xl {
+    @apply text-2xl;
+  }
+}
+h5, h6 {
+  @apply text-sm;
+
+  @screen lg {
+    @apply text-md;
+  };
+  
+  @screen xl {
+    @apply text-lg;
+  };
+}
+
+p {
+  @apply mb-4;
 }
 
 a {
@@ -49,14 +98,60 @@ a:visited {
   @apply text-black;
 }
 
-code {
-  @apply bg-gray-200 text-sm px-1;
+button {
+  @apply border border-brand-black;
+  transition: all 0.414s ease-out !important;
+}
+button.icon-button {
+  @apply w-8 h-8 text-xs;
+  @screen lg {
+    @apply text-sm;
+  }
+  @screen xl {
+    @apply w-12 h-12 text-md;
+  }
+}
+button.icon-button-sm {
+  @apply w-6 h-6 text-xs;
+  @screen lg {
+    @apply text-sm;
+  }
+  @screen xl {
+    @apply w-8 h-8 text-md;
+  }
+}
+button.text-button {
+  @apply py-2 w-48 text-sm;
+  @screen xl {
+    @apply w-64 text-lg;
+  }
+}
+button:hover {
+  @apply bg-brand-black text-brand-white;
+}
+button:focus {
+  outline: none !important;
 }
 
-dt {
-  @apply font-bold;
+/* 💫 Vue transition animations */
+.slide-fade-enter-active {
+  transition: all 0.616s ease-out;
+}
+.slide-fade-leave-active {
+  transition: all 0.616s ease-out;
+}
+.slide-fade-enter,
+.slide-fade-leave-to {
+  transform: translatey(10vw);
+  opacity: 0;
 }
 
-dd {
-  @apply mb-4;
+/* 🍱 Refs fonts */
+@font-face {
+  font-family: "Zona Pro ExtraLight";
+  src: url("../fonts/ZonaPro-ExtraLight.otf");
+}
+@font-face {
+  font-family: "Zona Pro Bold";
+  src: url("../fonts/ZonaPro-Bold.otf");
 }

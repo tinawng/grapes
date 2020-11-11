@@ -1,9 +1,7 @@
 <template>
   <!-- https://www.sonos.com/fr-fr/products/wireless-speakers -->
   <Layout
-    :nav_floating="true"
     nav_border_color="#DA5447"
-    :content_divide="true"
   >
     <div class="w-full bg-black relative">
       <div class="absolute w-full h-full flex justify-center items-center">
@@ -28,20 +26,21 @@
         <div
           class="ml-auto w-1/3 flex flex-col content-between md:h-40 lg:h-48 xl:h-56"
         >
-          <div
-            class="mb-1 md:text-2xl lg:text-3xl xl:text-4xl uppercase"
+          <h2
+          class="mb-1"
             v-html="formatProductName(edge.node.name)"
-          ></div>
-          <div class="md:text-sm lg:text-md xl:text-lg">
+          ></h2>
+          <h6>
             {{ edge.node.baseline }}
-          </div>
+          </h6>
           <div v-if="edge.node.variants.length" class="ml-auto">
+            <!-- override some default classe ? -->
             <button
               :class="[
                 index == selected_variant
                   ? 'bg-brand-black text-brand-white'
-                  : 'hover:bg-brand-black hover:text-brand-white ',
-                'ml-2 w-6 h-6 text-xs lg:w-8 lg:h-8 lg:text-sm border border-brand-black',
+                  : '',
+                'ml-2 icon-button-sm',
               ]"
               v-for="(variant, index) in edge.node.variants"
               :key="index"
@@ -50,9 +49,9 @@
               {{ variant }}
             </button>
           </div>
-          <div class="mt-auto md:text-sm lg:text-md xl:text-lg">
+          <h6 class="mt-auto">
             <strong>${{ edge.node.price }}</strong>
-          </div>
+          </h6>
         </div>
       </div>
     </section>
@@ -63,10 +62,12 @@
 </template>
 
 <script>
+import Layout from "~/layouts/Range.vue";
 import Spacer from "~/components/Spacer.vue";
 import ContactCard from "~/components/ContactCard.vue";
 export default {
   components: {
+    Layout,
     Spacer,
     ContactCard,
   },
@@ -79,7 +80,7 @@ export default {
   methods: {
     formatProductName(name) {
       let strs = name.split(this.range);
-      return "_" + strs[0] + "<strong>" + this.range + "</strong>" + strs[1];
+      return strs[0] + "<strong>" + this.range + "</strong>" + strs[1];
     },
     formatThumbnailPath(node) {
       if (node.variants.length) {

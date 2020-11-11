@@ -3,34 +3,22 @@
     <section ref="section1" id="section1" class="relative">
       <div class="h-full w-1/2 flex flex-col justify-center">
         <div class="flex flex-col justify-between xl:h-72 h-64">
-          <span
-            class="xl:text-lg text-sm"
-            data-aos="fade-up"
-            data-aos-duration="1600"
-            data-aos-delay="0"
-            >INTRODUCING</span
-          >
+          <h5 data-aos="fade-up" data-aos-duration="1600" data-aos-delay="0">
+            introducing
+          </h5>
           <Spacer
             data-aos="fade-up"
             data-aos-duration="1600"
             data-aos-delay="150"
           />
-          <span
-            class="xl:text-5xl text-3xl leading-none"
-            data-aos="fade-up"
-            data-aos-duration="1600"
-            data-aos-delay="250"
-            >_AUDIO<strong>FUSE</strong> STUDIO</span
-          >
-          <span
-            class="xl:text-lg text-sm"
-            data-aos="fade-up"
-            data-aos-duration="1600"
-            data-aos-delay="400"
-            >Flexible, adaptable 18-in, 20-out audio interface with vast
+          <h1 data-aos="fade-up" data-aos-duration="1600" data-aos-delay="250">
+            <span>audio<strong>fuse</strong> studio</span>
+          </h1>
+          <h6 data-aos="fade-up" data-aos-duration="1600" data-aos-delay="400">
+            Flexible, adaptable 18-in, 20-out audio interface with vast
             connectivity, powerful features, top-tier sound quality and a focus
-            on creative workflow.</span
-          >
+            on creative workflow.
+          </h6>
           <g-link
             class="text-brand-black"
             to="/fuse/audiofuse-studio"
@@ -38,11 +26,7 @@
             data-aos-duration="2000"
             data-aos-delay="650"
           >
-            <button
-              class="py-2 xl:w-64 w-48 xl:text-lg text-sm hover:bg-brand-black hover:text-brand-white border border-brand-black button"
-            >
-              EXPLORE
-            </button>
+            <button class="text-button">EXPLORE</button>
           </g-link>
         </div>
         <g-image class="absolute-image" src="@images/audiofuse-studio.png" />
@@ -61,34 +45,22 @@
         style="flex-basis: 50%; margin-left: -4vw"
       >
         <div class="flex flex-col justify-between xl:h-72 h-64">
-          <span
-            class="xl:text-lg text-sm"
-            data-aos="fade-up"
-            data-aos-duration="1600"
-            data-aos-delay="0"
-            >MORPHING ANALOG POLYSYNTH</span
-          >
+          <h5 data-aos="fade-up" data-aos-duration="1600" data-aos-delay="0">
+            morphing analog polysynth
+          </h5>
           <Spacer
             data-aos="fade-up"
             data-aos-duration="1600"
             data-aos-delay="150"
           />
-          <span
-            class="xl:text-5xl text-3xl leading-none"
-            data-aos="fade-up"
-            data-aos-duration="1600"
-            data-aos-delay="200"
-            >_POLY<strong>BRUTE</strong></span
-          >
-          <span
-            class="xl:text-lg text-sm"
-            data-aos="fade-up"
-            data-aos-duration="1600"
-            data-aos-delay="300"
-            >6-voice analog powerhouse, with unprecedented expressivity and
-            sound morphing capabilities, built to let you perform fearlessly,
-            compose with fluidity, and explore sound in perpetual motion.</span
-          >
+          <h1 data-aos="fade-up" data-aos-duration="1600" data-aos-delay="200">
+            <span>poly<strong>brute</strong></span>
+          </h1>
+          <h6 data-aos="fade-up" data-aos-duration="1600" data-aos-delay="300">
+            6-voice analog powerhouse, with unprecedented expressivity and sound
+            morphing capabilities, built to let you perform fearlessly, compose
+            with fluidity, and explore sound in perpetual motion.
+          </h6>
 
           <g-link
             to="/brute/polybrute"
@@ -97,15 +69,7 @@
             data-aos-duration="1600"
             data-aos-delay="400"
           >
-            <button
-              to="/brute"
-              data-aos="fade-up"
-              data-aos-duration="1800"
-              data-aos-delay="400"
-              class="py-2 xl:w-64 w-48 xl:text-lg text-sm hover:bg-brand-black hover:text-brand-white border border-brand-black"
-            >
-              EXPLORE
-            </button>
+            <button class="text-button">EXPLORE</button>
           </g-link>
         </div>
       </div>
@@ -114,39 +78,35 @@
       <div class="flex flex-wrap">
         <div class="w-1/2 flex h-1/2 items-center">
           <div class="flex flex-col justify-between xl:h-32 h-24">
-            <span
-              class="xl:text-lg text-sm"
-              data-aos="fade-up"
-              data-aos-duration="1600"
-              data-aos-delay="0"
-              >RANGES</span
-            >
+            <h5 data-aos="fade-up" data-aos-duration="1600" data-aos-delay="0">
+              ranges
+            </h5>
             <Spacer
               data-aos="fade-up"
               data-aos-duration="1600"
               data-aos-delay="150"
             />
-            <span
-              class="xl:text-5xl text-3xl leading-none"
+            <h3
               data-aos="fade-up"
               data-aos-duration="1600"
               data-aos-delay="250"
-              >Ready for you to explore</span
+              >Ready for you to explore</h3
             >
           </div>
         </div>
         <div class="w-1/2 flex h-1/2 items-center">
           <div class="flex flex-col justify-between xl:h-32 h-24">
-            <span
-              class="mt-4 xl:text-lg text-sm"
+            <h6
+              class="mt-4"
               data-aos="fade-up"
               data-aos-duration="1600"
               data-aos-delay="400"
-              >Explore the ultimate limits of your synth and sembark on the most
+            >
+              Explore the ultimate limits of your synth and sembark on the most
               radical sound experience. Embrace a wide variety of synthetic
               soundsm find your own creative madness and push it to the extreme
-              for something never seen before.</span
-            >
+              for something never seen before.
+            </h6>
           </div>
         </div>
 
@@ -159,7 +119,7 @@
             class="absolute w-full h-full pointer-events-none z-10 flex justify-center items-center"
           >
             <span
-              class="px-8 py-1 bg-brand-white text-xl xl:text-3xl text-red-800 font-bold tracking-5"
+              class="py-2 xl:w-64 w-48 bg-brand-white xl:text-lg text-sm text-red-800 font-bold tracking-5"
               >BRUTE</span
             >
           </div>
@@ -283,7 +243,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="postcss" scoped>
 .hover-zoom:hover {
   filter: brightness(75%);
   transform: scale(1.1);
@@ -292,7 +252,8 @@ export default {
   transition: all 0.5s ease;
 }
 .h-1\/2 {
-  height: 45vh;
+  /* height: 50%; */
+  @apply h-64
 }
 .margin-left {
   margin-left: 5vw;

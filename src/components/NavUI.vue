@@ -1,34 +1,38 @@
 <template>
   <div class="z-40">
     <div
-      :class="[nav_floating ? 'fixed' : '', nav_border_color ? 'bg-brand-white border-bottom ' : '', 'w-full flex justify-between']"
-      :style="'top: 0; left: 0; border-color: ' + nav_border_color"
+      :class="[
+        floating ? 'fixed' : '',
+        border_color ? 'bg-brand-white border-bottom ' : '',
+        'w-full flex justify-between',
+      ]"
+      :style="'top: 0; left: 0; border-color: ' + border_color"
     >
       <div
         :class="[
-          nav_shifted_left ? 'nav-shifted-left' : 'slow-transition',
-          'global-paddings w-full flex items-center justify-between',
+          shifted_left ? 'nav-shifted-left' : 'slow-transition',
+          'paddings w-full flex items-center justify-between',
         ]"
       >
-        <span class="zonapro-bold xl:text-2xl text-md"> _ARTURIA</span>
-        <div
+        <h4><strong>_ARTURIA</strong></h4>
+        <h5
           :class="[
             nav_hidden ? 'opacity-0' : '',
-            'w-30vw flex justify-between zonapro-extralight xl:text-lg text-sm',
+            'w-30vw flex justify-between',
           ]"
         >
           <span>RANGES</span>
           <span>COMMUNITY</span>
           <span>SUPPORT</span>
           <span>MYARTURIA</span>
-        </div>
+        </h5>
       </div>
     </div>
     <button
       @click="nav_hidden = false"
       :class="[
         !nav_hidden ? 'opacity-0' : '',
-        'fixed w-8 h-8 xl:w-12 xl:h-12 text-sm hover:bg-brand-black hover:text-brand-white border border-brand-black',
+        'fixed icon-button font-bold xl:font-medium',
       ]"
       style="top: 3vw; right: 3vw"
     >
@@ -36,8 +40,8 @@
     </button>
     <button
       @click="scrollToNextSection()"
-      class="fixed w-8 h-8 xl:w-12 xl:h-12 text-sm hover:bg-brand-black hover:text-brand-white border border-brand-black"
-      style="bottom: 3vw; left: 3vw"
+      class="fixed icon-button"
+      style="bottom: 3vw; left: 3vw; padding-bottom: 0.2rem"
     >
       ↓
     </button>
@@ -46,7 +50,7 @@
 
 <script>
 export default {
-  props: ["nav_floating", "nav_shifted_left", "nav_border_color"],
+  props: ["floating", "shifted_left", "border_color"],
   data: () => ({
     nav_hidden: false,
   }),
@@ -54,7 +58,7 @@ export default {
   mounted() {
     this.$event_bus.$on("scrolling", () => {
       this.nav_hidden = window.pageYOffset >= 100;
-      this.nav_shifted_left = window.pageYOffset < 100;
+      this.shifted_left = window.pageYOffset < 100;
     });
   },
 
@@ -66,7 +70,21 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="postcss" scoped>
+.paddings {
+  @apply h-16;
+  @screen lg {
+    @apply h-24;
+  }
+  @screen xl {
+    @apply h-32;
+  }
+  /* padding-top: 2.5vw;
+  padding-bottom: 2.5vw; */
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+
 .slow-transition {
   transition: all 1.61s ease-in;
 }
