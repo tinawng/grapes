@@ -22,7 +22,7 @@
           ]"
         >
           <span>RANGES</span>
-          <span>COMMUNITY</span>
+          <span>SOUNDS</span>
           <span>SUPPORT</span>
           <span>MYARTURIA</span>
         </h5>
