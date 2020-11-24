@@ -2,9 +2,9 @@
   <div class="bg-brand-white flex justify-center">
     <ScreenDebug />
     <div class="w-full">
-      <NavUI
+      <!-- <NavUI
         :border_color="nav_border_color"
-      />
+      /> -->
       <div
         class="w-full flex flex-col items-center divide-y divide-brand-black"
       >

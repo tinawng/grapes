@@ -235,10 +235,6 @@ export default {
     this.$event_bus.$on("scrolling", () => {
       self.show = false;
     });
-
-    window.onscroll = function () {
-      self.$event_bus.$emit("scrolling");
-    };
   },
 };
 </script>

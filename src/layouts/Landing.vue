@@ -2,7 +2,7 @@
   <div class="bg-brand-white flex justify-center">
     <ScreenDebug />
     <div class="w-full flex">
-      <NavUI :floating="true" :shifted_left="true" />
+      <!-- <NavUI :floating="true" :shifted_left="true" /> -->
       <div class="w-full flex flex-col items-center">
         <slot />
       </div>

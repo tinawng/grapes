@@ -12,13 +12,20 @@ import Header from "~/components/Header.vue";
 export default {
   components: {
     Header,
+  },
+
+  mounted() {
+    let self = this
+    window.onscroll = function () {
+      self.$event_bus.$emit("scrolling");
+    };
   }
 }
 </script>
 
 <style>
 .fade-enter-active {
-  transition: opacity 5.5s;
+  transition: opacity 4s;
 }
 
 .fade-enter {

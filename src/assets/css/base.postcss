@@ -90,14 +90,6 @@ p {
   @apply mb-4;
 }
 
-a {
-  @apply underline text-indigo-700;
-}
-
-a:visited {
-  @apply text-black;
-}
-
 button {
   @apply border border-brand-black;
   transition: all 0.414s ease-out !important;
@@ -134,13 +126,27 @@ button:focus {
 }
 
 .nav-ui {
-  @apply fixed z-50 h-12 w-full bg-brand-black;
+  @apply fixed z-40 h-12 w-full;
+  
+  padding-left: 3vw;
+  padding-right: 3vw;
+
   @screen lg {
-    height: calc(3vw + 2rem)
+    height: calc(6vw + 1rem)
   }
   @screen xl {
-    height: calc(3vw + 3rem)
+    height: calc(6vw + 2rem)
   }
+}
+
+.flex-center-x {
+  @apply flex justify-center;
+}
+.flex-center-y {
+  @apply flex items-center;
+}
+.flex-center {
+  @apply flex-center-x flex-center-y;
 }
 
 /* 💫 Vue transition animations */
