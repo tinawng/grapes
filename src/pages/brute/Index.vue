@@ -1,9 +1,7 @@
 <template>
   <!-- https://www.sonos.com/fr-fr/products/wireless-speakers -->
-  <Layout
-    nav_border_color="#DA5447"
-  >
-    <div class="w-full relative">
+  <Layout range_color="#DA5447">
+    <!-- <div class="w-full relative">
       <div class="absolute w-full h-full flex justify-center items-center">
         <span
           class="absolute pl-16 pr-12 zborder text-6xl text-white bb"
@@ -16,20 +14,14 @@
         src="@images/brute.jpg"
         style="object-fit: cover"
       />
-    </div>
+    </div> -->
     <section v-for="(edge, index) in $page.products.edges" :key="index">
-      <div class="flex justify-between items-center aa">
-        <g-image
-          :src="formatThumbnailPath(edge.node)"
-          class="md:h-32 lg:h-48 xl:h-56"
-        />
+      <g-link :to="'/brute/' + edge.node.name" class="flex justify-between items-center aa">
+        <g-image :src="formatThumbnailPath(edge.node)" />
         <div
           class="ml-auto w-1/3 flex flex-col content-between md:h-40 lg:h-48 xl:h-56"
         >
-          <h2
-          class="mb-1"
-            v-html="formatProductName(edge.node.name)"
-          ></h2>
+          <h2 class="mb-1" v-html="formatProductName(edge.node.name)"></h2>
           <h6>
             {{ edge.node.baseline }}
           </h6>
@@ -53,7 +45,7 @@
             <strong>${{ edge.node.price }}</strong>
           </h6>
         </div>
-      </div>
+      </g-link>
     </section>
     <section>
       <ContactCard class="my-32 mx-auto" />
@@ -121,17 +113,21 @@ query {
 }
 
 .cc {
-  margin-top: 3rem;
-  height: 45vh;
+  height: 3rem;
+
+  @screen lg {
+    height: calc(6vw + 1rem);
+  }
+  @screen xl {
+    height: calc(6vw + 4.5rem);
+  }
+
   animation-name: dd;
   animation-duration: 2.5s;
 }
 @keyframes dd {
   from {
-    height: 16vh;
-  }
-  to {
-    height: 45vh;
+    height: 0;
   }
 }
 
@@ -151,6 +147,17 @@ query {
   to {
     letter-spacing: 4vw;
     margin-left: 4vw;
+  }
+}
+
+.g-image {
+  @apply h-32;
+
+  @screen lg {
+    @apply h-56;
+  }
+  @screen xl {
+    @apply h-72;
   }
 }
 

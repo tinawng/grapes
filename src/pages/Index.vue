@@ -2,7 +2,7 @@
   <Layout :nav_floating="true" :nav_shifted_left="true">
     <section ref="section1" id="section1" class="relative">
       <div class="h-full w-1/2 flex flex-col justify-center">
-        <div class="flex flex-col justify-between xl:h-72 h-64">
+        <div class="flex flex-col justify-between xl:h-96 h-64">
           <h5 data-aos="fade-up" data-aos-duration="1600" data-aos-delay="0">
             introducing
           </h5>
@@ -44,7 +44,7 @@
         class="h-full flex flex-col justify-center"
         style="flex-basis: 50%; margin-left: -4vw"
       >
-        <div class="flex flex-col justify-between xl:h-72 h-64">
+        <div class="flex flex-col justify-between xl:h-96 h-64">
           <h5 data-aos="fade-up" data-aos-duration="1600" data-aos-delay="0">
             morphing analog polysynth
           </h5>
@@ -90,8 +90,9 @@
               data-aos="fade-up"
               data-aos-duration="1600"
               data-aos-delay="250"
-              >Ready for you to explore</h3
             >
+              Ready for you to explore
+            </h3>
           </div>
         </div>
         <div class="w-1/2 flex h-1/2 items-center">
@@ -249,7 +250,7 @@ export default {
 }
 .h-1\/2 {
   /* height: 50%; */
-  @apply h-64
+  @apply h-64;
 }
 .margin-left {
   margin-left: 5vw;
