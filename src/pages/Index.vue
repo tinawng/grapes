@@ -265,6 +265,6 @@ export default {
 section {
   height: 100vh;
   max-height: calc(100vw * 0.47);
-  width: calc(100vw - 19vw);
+  width: calc(100vw - 18vw);
 }
 </style>

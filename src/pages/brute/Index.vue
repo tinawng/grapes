@@ -3,7 +3,7 @@
   <Layout
     nav_border_color="#DA5447"
   >
-    <div class="w-full bg-black relative">
+    <div class="w-full relative">
       <div class="absolute w-full h-full flex justify-center items-center">
         <span
           class="absolute pl-16 pr-12 zborder text-6xl text-white bb"
@@ -115,12 +115,13 @@ query {
 }
 </page-query>
 
-<style scoped>
+<style lang="postcss" scoped>
 .aa {
   padding: 4.5vw;
 }
 
 .cc {
+  margin-top: 3rem;
   height: 45vh;
   animation-name: dd;
   animation-duration: 2.5s;
