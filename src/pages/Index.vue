@@ -3,9 +3,9 @@
     <section ref="section1" id="section1" class="relative">
       <div class="h-full w-1/2 flex flex-col justify-center">
         <div class="flex flex-col justify-between xl:h-96 h-64">
-          <h5 data-aos="fade-up" data-aos-duration="1600" data-aos-delay="0">
-            introducing
-          </h5>
+          <h6 data-aos="fade-up" data-aos-duration="1600" data-aos-delay="0">
+            INTRODUCING
+          </h6>
           <Spacer
             data-aos="fade-up"
             data-aos-duration="1600"
@@ -45,9 +45,9 @@
         style="flex-basis: 50%; margin-left: -4vw"
       >
         <div class="flex flex-col justify-between xl:h-96 h-64">
-          <h5 data-aos="fade-up" data-aos-duration="1600" data-aos-delay="0">
-            morphing analog polysynth
-          </h5>
+          <h6 data-aos="fade-up" data-aos-duration="1600" data-aos-delay="0">
+            MORPHING ANALOG POLYSYNTH
+          </h6>
           <Spacer
             data-aos="fade-up"
             data-aos-duration="1600"
@@ -78,9 +78,9 @@
       <div class="flex flex-wrap">
         <div class="w-1/2 flex h-1/2 items-center">
           <div class="flex flex-col justify-between xl:h-32 h-24">
-            <h5 data-aos="fade-up" data-aos-duration="1600" data-aos-delay="0">
-              ranges
-            </h5>
+            <h6 data-aos="fade-up" data-aos-duration="1600" data-aos-delay="0">
+              RANGES
+            </h6>
             <Spacer
               data-aos="fade-up"
               data-aos-duration="1600"
@@ -119,10 +119,12 @@
           <div
             class="absolute w-full h-full pointer-events-none z-10 flex justify-center items-center"
           >
-            <span
-              class="py-2 xl:w-64 w-48 bg-brand-white xl:text-lg text-sm text-red-800 font-bold tracking-5"
-              >BRUTE</span
+            <h5
+              class="py-1 xl:w-64 w-48 bg-brand-white text-center text-red-800 font-bold tracking-5"
+              style="padding-left: 0.6rem"
             >
+              BRUTE
+            </h5>
           </div>
           <g-image
             class="w-full h-full object-cover hover-zoom"
@@ -138,10 +140,12 @@
           <div
             class="absolute w-full h-full pointer-events-none z-10 flex justify-center items-center"
           >
-            <span
-              class="px-8 py-1 bg-brand-white text-xl xl:text-3xl text-yellow-700 font-bold tracking-5"
-              >FREAK</span
+            <h5
+              class="py-1 xl:w-64 w-48 bg-brand-white text-center text-yellow-700 font-bold tracking-5"
+              style="padding-left: 0.6rem"
             >
+              FREAK
+            </h5>
           </div>
           <g-image
             class="w-full h-full object-cover hover-zoom"
@@ -156,10 +160,12 @@
           <div
             class="absolute w-full h-full pointer-events-none z-10 flex justify-center items-center"
           >
-            <span
-              class="px-8 py-1 bg-brand-white text-xl xl:text-3xl text-deepskyblue-200 font-bold tracking-5"
-              >LAB</span
+            <h5
+              class="py-1 xl:w-64 w-48 bg-brand-white text-center text-deepskyblue-200 font-bold tracking-5"
+              style="padding-left: 0.6rem"
             >
+              LAB
+            </h5>
           </div>
           <g-image class="w-full h-full hover-zoom" src="@images/lab.jpg" />
         </g-link>
@@ -171,10 +177,12 @@
           <div
             class="absolute w-full h-full pointer-events-none z-10 flex justify-center items-center"
           >
-            <span
-              class="px-8 py-1 bg-brand-white text-xl xl:text-3xl text-blue-600 font-bold tracking-5"
-              >FUSE</span
+            <h5
+              class="py-1 xl:w-64 w-48 bg-brand-white text-center text-blue-600 font-bold tracking-5"
+              style="padding-left: 0.6rem"
             >
+              FUSE
+            </h5>
           </div>
           <g-image class="w-full h-full hover-zoom" src="@images/fuse.jpg" />
         </g-link>
@@ -186,19 +194,47 @@
           <div
             class="absolute w-full h-full pointer-events-none z-10 flex justify-center items-center"
           >
-            <span
-              class="px-8 py-1 bg-brand-white text-xl xl:text-3xl text-gray-700 font-bold tracking-5"
-              >STEP</span
+            <h5
+              class="py-1 xl:w-64 w-48 bg-brand-white text-center text-gray-700 font-bold tracking-5"
+              style="padding-left: 0.6rem"
             >
+              STEP
+            </h5>
           </div>
           <g-image class="w-full h-full hover-zoom" src="@images/step.jpg" />
         </g-link>
       </div>
     </section>
-    <section ref="section4" id="section4">section4</section>
+    <section ref="section4" id="section4"></section>
     <section ref="section5" id="section5" class="relative">
+      <g-image
+        class="absolute-image"
+        :class="[show_card ? 'blur' : '']"
+        src="@images/microfreak-vocoder.png"
+      />
+      <div
+        class="w-1/2 h-full flex flex-col justify-center"
+        :class="[show_card ? 'blur' : '']"
+      >
+        <div class="flex flex-col justify-between xl:h-96 h-64">
+          <h6>FLUENT IN CHAOS</h6>
+          <Spacer />
+          <h1>
+            <span>micro<strong>freak</strong> vocoder</span>
+          </h1>
+          <h6>
+            16-band vocoder with accessible real-time voicing controls,
+            detachable gooseneck microphone and a slick new aesthetic.
+          </h6>
+
+          <g-link to="/brute/polybrute" class="text-brand-black">
+            <button class="text-button">EXPLORE</button>
+          </g-link>
+        </div>
+      </div>
+
       <transition name="slide-fade">
-        <ContactCardModal v-if="show" />
+        <ContactCardModal v-if="show_card" />
       </transition>
     </section>
   </Layout>
@@ -218,7 +254,7 @@ export default {
   },
 
   data: () => ({
-    show: false,
+    show_card: false,
   }),
 
   mounted() {
@@ -229,12 +265,12 @@ export default {
     intersectionTrigger(this.$refs["section4"]);
     intersectionTrigger(this.$refs["section5"], () => {
       setTimeout(() => {
-        self.show = true;
+        self.show_card = true;
       }, 100);
     });
 
     this.$event_bus.$on("scrolling", () => {
-      self.show = false;
+      self.show_card = false;
     });
   },
 };
@@ -248,10 +284,6 @@ export default {
 .hover-zoom {
   transition: all 0.5s ease;
 }
-.h-1\/2 {
-  /* height: 50%; */
-  @apply h-64;
-}
 .margin-left {
   margin-left: 5vw;
 }
@@ -261,6 +293,11 @@ export default {
   top: 0;
   height: 100%;
   width: auto;
+}
+
+.blur {
+  transition: filter 1.141s;
+  filter: blur(5px);
 }
 
 section {
