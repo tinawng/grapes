@@ -28,7 +28,7 @@ module.exports = {
         '5': '5px'
       },
       letterSpacing: {
-        '5': '.5rem'
+        '5': '.6rem'
       },
       colors: {
         'brand-white': '#FAFAFA',

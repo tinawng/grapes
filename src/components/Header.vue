@@ -8,7 +8,7 @@
       <h4>
         <strong>_ARTURIA</strong>
       </h4>
-      <h5
+      <h6
         class="w-1/3 flex justify-between margin-transition"
         :style="{
           'margin-right': is_index ? '33%' : '',
@@ -19,7 +19,7 @@
         <g-link to="/sounds">SOUNDS</g-link>
         <g-link to="/support">SUPPORT</g-link>
         <g-link to="/myarturia">MYARTURIA</g-link>
-      </h5>
+      </h6>
     </div>
 
     <div v-if="is_index">
