@@ -21,16 +21,3 @@ export default {
   props: ["range_color"],
 };
 </script>
-
-<style lang="postcss">
-.nav-ui-padding {
-  @apply pt-12;
-
-  @screen lg {
-    padding-top: calc(6vw + 1rem);
-  }
-  @screen xl {
-    padding-top: calc(6vw + 2rem);
-  }
-}
-</style>
