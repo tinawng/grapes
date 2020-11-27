@@ -74,43 +74,31 @@
         </div>
       </div>
     </section>
-    <section ref="section3" id="section3">
+    <section ref="section3" id="section3" style="height: auto; max-height: 200vh">
       <div class="flex flex-wrap">
-        <div class="w-1/2 flex h-1/2 items-center">
-          <div class="flex flex-col justify-between xl:h-32 h-24">
-            <h6 data-aos="fade-up" data-aos-duration="1600" data-aos-delay="0">
-              RANGES
-            </h6>
-            <Spacer
-              data-aos="fade-up"
-              data-aos-duration="1600"
-              data-aos-delay="150"
-            />
-            <h3
-              data-aos="fade-up"
-              data-aos-duration="1600"
-              data-aos-delay="250"
-            >
-              Ready for you to explore
-            </h3>
-          </div>
+      <div class="h-1/2 w-1/2 mb-8 flex items-center">
+        <div class="flex flex-col justify-between xl:h-32 h-24">
+          <h6>
+            RANGES
+          </h6>
+          <Spacer
+          />
+          <h3>
+            Ready for you to explore
+          </h3>
         </div>
-        <div class="w-1/2 flex h-1/2 items-center">
-          <div class="flex flex-col justify-between xl:h-32 h-24">
-            <h6
-              class="mt-4"
-              data-aos="fade-up"
-              data-aos-duration="1600"
-              data-aos-delay="400"
-            >
-              Explore the ultimate limits of your synth and sembark on the most
-              radical sound experience. Embrace a wide variety of synthetic
-              soundsm find your own creative madness and push it to the extreme
-              for something never seen before.
-            </h6>
-          </div>
+      </div>
+      <div class="h-1/2 w-1/2 mb-8 flex items-center">
+        <div class="flex flex-col justify-between xl:h-32 h-24">
+          <h6
+          >
+            Explore the ultimate limits of your synth and sembark on the most
+            radical sound experience. Embrace a wide variety of synthetic
+            soundsm find your own creative madness and push it to the extreme
+            for something never seen before.
+          </h6>
         </div>
-
+      </div>
         <g-link
           to="/brute"
           class="relative w-1/2 overflow-hidden"
@@ -205,11 +193,11 @@
         </g-link>
       </div>
     </section>
-    <section ref="section4" id="section4"></section>
-    <section ref="section5" id="section5" class="relative">
+    <section ref="section4" id="section4" class="mt-20 relative">
       <g-image
         class="absolute-image"
         :class="[show_card ? 'blur' : '']"
+        style="right: 0vw;"
         src="@images/microfreak-vocoder.png"
       />
       <div
@@ -262,8 +250,7 @@ export default {
     intersectionTrigger(this.$refs["section1"]);
     intersectionTrigger(this.$refs["section2"]);
     intersectionTrigger(this.$refs["section3"]);
-    intersectionTrigger(this.$refs["section4"]);
-    intersectionTrigger(this.$refs["section5"], () => {
+    intersectionTrigger(this.$refs["section4"], () => {
       setTimeout(() => {
         self.show_card = true;
       }, 100);
