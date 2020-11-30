@@ -74,31 +74,25 @@
         </div>
       </div>
     </section>
-    <section ref="section3" id="section3" style="height: auto; max-height: 200vh">
+    <section ref="section3" id="section3">
       <div class="flex flex-wrap">
-      <div class="h-1/2 w-1/2 mb-8 flex items-center">
-        <div class="flex flex-col justify-between xl:h-32 h-24">
-          <h6>
-            RANGES
-          </h6>
-          <Spacer
-          />
-          <h3>
-            Ready for you to explore
-          </h3>
+        <div class="h-1/2 w-1/2 mb-8 flex items-center">
+          <div class="flex flex-col justify-between xl:h-32 h-24">
+            <h6>RANGES</h6>
+            <Spacer />
+            <h3>Ready for you to explore</h3>
+          </div>
         </div>
-      </div>
-      <div class="h-1/2 w-1/2 mb-8 flex items-center">
-        <div class="flex flex-col justify-between xl:h-32 h-24">
-          <h6
-          >
-            Explore the ultimate limits of your synth and sembark on the most
-            radical sound experience. Embrace a wide variety of synthetic
-            soundsm find your own creative madness and push it to the extreme
-            for something never seen before.
-          </h6>
+        <div class="h-1/2 w-1/2 mb-8 flex items-center">
+          <div class="flex flex-col justify-between xl:h-32 h-24">
+            <h6>
+              Explore the ultimate limits of your synth and sembark on the most
+              radical sound experience. Embrace a wide variety of synthetic
+              soundsm find your own creative madness and push it to the extreme
+              for something never seen before.
+            </h6>
+          </div>
         </div>
-      </div>
         <g-link
           to="/brute"
           class="relative w-1/2 overflow-hidden"
@@ -193,11 +187,12 @@
         </g-link>
       </div>
     </section>
-    <section ref="section4" id="section4" class="mt-20 relative">
+    <section ref="section4" id="section4"></section>
+    <section ref="section5" id="section5" class="mt-20 relative">
       <g-image
         class="absolute-image"
         :class="[show_card ? 'blur' : '']"
-        style="right: 0vw;"
+        style="right: 0vw"
         src="@images/microfreak-vocoder.png"
       />
       <div
@@ -215,7 +210,7 @@
             detachable gooseneck microphone and a slick new aesthetic.
           </h6>
 
-          <g-link to="/brute/polybrute" class="text-brand-black">
+          <g-link to="/freak/microfreak" class="text-brand-black">
             <button class="text-button">EXPLORE</button>
           </g-link>
         </div>
@@ -250,7 +245,8 @@ export default {
     intersectionTrigger(this.$refs["section1"]);
     intersectionTrigger(this.$refs["section2"]);
     intersectionTrigger(this.$refs["section3"]);
-    intersectionTrigger(this.$refs["section4"], () => {
+    intersectionTrigger(this.$refs["section4"]);
+    intersectionTrigger(this.$refs["section5"], () => {
       setTimeout(() => {
         self.show_card = true;
       }, 100);
