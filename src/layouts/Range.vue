@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-brand-white flex justify-center nav-ui-padding">
+  <div class="nav-ui-padding bg-brand-white flex justify-center">
     <ScreenDebug />
     <div class="fixed top-0 left-0 nav-ui-padding w-full border-b" :style="'border-color: ' + range_color" />
     <div

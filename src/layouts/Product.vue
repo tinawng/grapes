@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-brand-white flex justify-center nav-ui-padding">
+  <div class="bg-brand-white flex nav-ui-padding aa">
     <slot />
   </div>
 </template>
@@ -8,5 +8,8 @@
 export default {};
 </script>
 
-<style>
+<style scoped>
+.aa {
+  padding-left: 2vw;
+}
 </style>
