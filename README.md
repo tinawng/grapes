@@ -1,41 +1,47 @@
-# Tulip
 
-> Simple single page starter for Gridsome
+<p align="center">
+    <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/grapes_1f347.png"/>
+    <br/>
+    <br/>
+    <img src="https://img.shields.io/badge/gridsome--00A672?style=for-the-badge&logo=gridsome"/>
+    <img src="https://img.shields.io/badge/vue--4FC08D?style=for-the-badge&logo=vue.js"/>
+    <img src="https://img.shields.io/badge/tailwind--38B2AC?style=for-the-badge&logo=tailwind%20css"/>
+</p>
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Uninen/gridsome-starter-tulip)
+# Preview
+<p align="center">
+    <img src="./.github/thumbnails.png"/>
+    <br/>
+    <br/>
+</p>
 
-[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/Uninen/gridsome-starter-tulip)
+# Infos
 
-### Preview / Demo
+🍇 *Grapes* is my take of the Arturia's website, with a **simple**, **light** & **minimalist** approach.
 
-![Tulip starter for Gridsome preview](./static/img/screenshot-0.1.0.png)
+A little static website experiment to mess with ***Gridsome*** static generation with multiple sources of datas and ***Tailwind*** framework with a touch of ***PostCSS***.
 
-Live demo and documentation at: https://gridsome-starter-tulip.netlify.com/
+Another goal was to try to lighten the website page content which tend to way too long/bulky.
 
-### Features
+Hope you like it 💖
 
-No blog, tags or other cruft; only one simple page you can paste your content into.
+# Links
 
-- [Tailwind CSS](https://tailwindcss.com) w/ minimal base styles
-- **Single page** for your content, nothing else.
-- Ready if you need them: **Google Analytics** and **Open Graph** meta tags
+- 🏗️ Gridsome: [https://gridsome.org](https://gridsome.org/)
+- ✨ Vue.js: [https://vuejs.org](https://vuejs.org/)
+- 💄 Tailwind CSS: [https://tailwindcss.com](https://tailwindcss.com/)
 
-### Installation And Configuration
+# Build & developpement
 
-First [make sure you have Gridsome installed](https://gridsome.org/docs/#how-to-install). Then run:
-
-```sh
-gridsome create my-website https://github.com/Uninen/gridsome-starter-tulip.git
+After pulling the projet, run the very classic
 ```
-
-Read and follow the [detailed configuration instructions](https://gridsome-starter-tulip.netlify.com/), you'll be done in less than 5 minutes.
-
-### Contributing
-
-Feel free to open a ticket if you feel something is broken or missing. All contributions are welcome, I only ask you to follow the [code of conduct](./CODE_OF_CONDUCT.md).
-
-Lastly, Big Thank You to Gridsome and Vue teams for making these great tools! ❤️
-
-### Support Open Source Development
-
-<a href="https://www.buymeacoffee.com/Uninen" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" style="height: 51px !important;width: 217px !important;" ></a>
+npm install
+```
+Then start the developpement server with
+```
+npm run develop
+```
+Or build it with
+```
+npm run build
+```
