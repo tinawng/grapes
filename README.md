@@ -19,9 +19,9 @@
 
 🍇 *Grapes* is my take of the Arturia's website, with a **simple**, **light** & **minimalist** approach.
 
-A little static website experiment to mess with ***Gridsome*** static generation with multiple sources of datas and ***Tailwind*** framework with a touch of ***PostCSS***.
+A small static website experiment to mess with ***Gridsome*** static generation with multiple sources of datas and ***Tailwind*** framework with a touch of ***PostCSS***.
 
-Another goal was to try to lighten the website page content which tend to way too long/bulky.
+Another goal was to try to lighten the website page content which tend to be way too long/bulky.
 
 Hope you like it 💖
 
@@ -31,7 +31,7 @@ Hope you like it 💖
 - ✨ Vue.js: [https://vuejs.org](https://vuejs.org/)
 - 💄 Tailwind CSS: [https://tailwindcss.com](https://tailwindcss.com/)
 
-# Build & developpement
+# Build & Developpement
 
 After pulling the projet, run the very classic
 ```
