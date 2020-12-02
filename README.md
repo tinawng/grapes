@@ -25,6 +25,16 @@ Another goal was to try to lighten the website page content which tend to be way
 
 Hope you like it 💖
 
+# Features
+### Gridsome
+- 🗃️ Pages built from static data (Vue, JSON & Markdown files)
+- ⚡️ Progressive image loading
+- 🎨 PurgeCSS
+### Vue
+- 💄 Responsive design
+- 💫 Text animation & page transition
+- 🚀 Auto scroll
+
 # Links
 
 - 🏗️ Gridsome: [https://gridsome.org](https://gridsome.org/)
