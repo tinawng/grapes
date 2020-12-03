@@ -27,10 +27,10 @@ Hope you like it 💖
 
 # Live Demo
 
-🔗 ***[lessismore.tina.cafe](http://lessismore.tina.cafe/index.html)***
+🔗 ***[lessismore.tina.cafe](http://lessismore.tina.cafe/)***
 
 # Content
-- 🏠 Landing page *[/index.html](http://lessismore.tina.cafe/index.html)*
+- 🏠 Landing page *[/index.html](http://lessismore.tina.cafe/)*
 - 💐 Products range page *[/brute](http://lessismore.tina.cafe/brute/index.html)*
 - 🌷 Product page *[/freak/microfreak](http://lessismore.tina.cafe/freak/microfreak.html)*
 
