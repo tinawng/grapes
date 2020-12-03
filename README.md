@@ -25,7 +25,17 @@ Another goal was to try to lighten the website page content which tend to be way
 
 Hope you like it 💖
 
+# Live Demo
+
+🔗 ***[lessismore.tina.cafe](http://lessismore.tina.cafe/index.html)***
+
+# Content
+- 🏠 Landing page *[/index.html](http://lessismore.tina.cafe/index.html)*
+- 💐 Products range page *[/brute](http://lessismore.tina.cafe/brute/index.html)*
+- 🌷 Product page *[/freak/microfreak](http://lessismore.tina.cafe/freak/microfreak.html)*
+
 # Features
+
 ### Gridsome
 - 🗃️ Pages built from static data (Vue, JSON & Markdown files)
 - ⚡️ Progressive image loading
@@ -37,17 +47,17 @@ Hope you like it 💖
 
 # Links
 
-- 🏗️ Gridsome: [https://gridsome.org](https://gridsome.org/)
-- ✨ Vue.js: [https://vuejs.org](https://vuejs.org/)
-- 💄 Tailwind CSS: [https://tailwindcss.com](https://tailwindcss.com/)
+- 🏗️ Gridsome: *[https://gridsome.org](https://gridsome.org/)*
+- ✨ Vue.js: *[https://vuejs.org](https://vuejs.org/)*
+- 💄 Tailwind CSS: *[https://tailwindcss.com](https://tailwindcss.com/)*
 
-# Build & Developpement
+# Build & Development
 
 After pulling the projet, run the very classic
 ```
 npm install
 ```
-Then start the developpement server with
+Then start the dev server with
 ```
 npm run develop
 ```
