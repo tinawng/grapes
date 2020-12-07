@@ -31,8 +31,8 @@ Hope you like it 💖
 
 # Content
 - 🏠 Landing page *[/index.html](http://lessismore.tina.cafe/)*
-- 💐 Products range page *[/brute](http://lessismore.tina.cafe/brute/index.html)*
-- 🌷 Product page *[/freak/microfreak](http://lessismore.tina.cafe/freak/microfreak.html)*
+- 💐 Products range page *[/brute](http://lessismore.tina.cafe/brute/)*
+- 🌷 Product page *[/freak/microfreak](http://lessismore.tina.cafe/freak/microfreak/)*
 
 # Features
 
